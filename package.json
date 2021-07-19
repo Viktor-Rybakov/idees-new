@@ -1,0 +1,35 @@
+{
+  "name": "idees",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve --quiet",
+    "build": "eleventy && npm run stylesMinify",
+    "test": "npm run testHtml && npm run stylelint && npm run esLint && npm run eeditorconfigCheck",
+    "stylesMinify": "rm -rf dist/styles && npx postcss src/styles/index.css --use postcss-import --use autoprefixer --use postcss-csso --no-map --output dist/styles/index.css",
+    "testHtml": "htmlhint dist/*.html",
+    "stylelint": "stylelint \"src/styles/**/*.css\"",
+    "esLint": "eslint src/scripts/",
+    "eeditorconfigCheck": "editorconfig-checker"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11",
+    "iOS >= 12"
+  ],
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.3.1",
+    "editorconfig-checker": "^4.0.2",
+    "eslint": "^7.31.0",
+    "eslint-config-htmlacademy": "^4.0.2",
+    "html-minifier": "^4.0.0",
+    "htmlhint": "^0.15.1",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-csso": "^5.0.1",
+    "postcss-import": "^14.0.2",
+    "stylelint": "^13.13.1",
+    "stylelint-order": "^4.1.0"
+  }
+}
