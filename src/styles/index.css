@@ -1,0 +1,13 @@
+/* Global */
+
+@import "normalize.css";
+@import "global.css";
+@import "fonts.css";
+@import "variables.css";
+@import "visually-hidden.css";
+
+/* Blocks */
+
+@import "blocks/container.css";
+@import "blocks/page.css";
+@import "blocks/header.css";
