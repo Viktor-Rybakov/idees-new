@@ -10,7 +10,7 @@
 
 .header__logo-link {
   display: block;
-  margin-right: 128px;
+  margin-right: 8%;
 }
 
 .header__logo-link:hover {
@@ -39,6 +39,10 @@
   color: var(--grey);
 }
 
+.header__button-link-icon {
+  fill: currentColor;
+}
+
 .header__button-link--express {
   display: flex;
   justify-content: center;
@@ -52,5 +56,5 @@
 }
 
 .header__button-link--project {
-  margin-right: 152px;
+  margin-right: 9%;
 }
