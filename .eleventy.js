@@ -2,6 +2,10 @@ const htmlmin = require('html-minifier');
 
 module.exports = (config) => {
 
+  // Styles
+
+  config.addWatchTarget('src/styles/');
+
   // HTML Minification
 
   config.addTransform('htmlmin', (content, outputPath) => {
@@ -22,7 +26,6 @@ module.exports = (config) => {
 
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/img');
-  config.addPassthroughCopy('src/styles');
   config.addPassthroughCopy('src/scripts');
 
   // Config
