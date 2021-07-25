@@ -1,0 +1,43 @@
+/* Button */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--grey);
+  }
+}
+
+.button__icon-wrapper {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid currentColor;
+  border-radius: 99em;
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+
+  &--fill {
+    fill: currentColor;
+    stroke: none;
+  }
+}
+
+.button__text {
+  margin-left: 10px;
+}
