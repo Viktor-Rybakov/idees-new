@@ -2,16 +2,17 @@
   "name": "idees",
   "private": true,
   "scripts": {
-    "start": "rm -rf dist && npm run watch:eleventy & npm run watch:styles",
-    "build": "rm -rf dist && eleventy && npm run build:styles",
-    "watch:styles": "npx sass --watch src/styles/index.scss dist/styles/index.css",
+    "start": "rm -rf dist && npm run watch:eleventy & npm run watch:postcss",
+    "test": "npm run test:html && npm run test:styles && npm run test:scripts && npm run test:editorconfig",
+    "build": "rm -rf dist && build:eleventy && npm run build:postcss",
+    "watch:postcss": "npx postcss --watch src/styles/index.scss --use postcss-nested --use postcss-import --output dist/styles/index.css",
     "watch:eleventy": "eleventy --serve --quiet --watch",
-    "build:styles": "npx sass --no-source-map src/styles/index.scss dist/styles/index.css && npx postcss dist/styles/index.css --use --use autoprefixer --use postcss-csso --no-map --output dist/styles/index.css",
-    "test": "npm run testHtml && npm run stylelint && npm run esLint && npm run eeditorconfigCheck",
-    "testHtml": "htmlhint dist/*.html",
-    "stylelint": "stylelint \"src/styles/**/*.css\"",
-    "esLint": "eslint src/scripts/",
-    "eeditorconfigCheck": "editorconfig-checker"
+    "build:postcss": "npx postcss src/styles/index.scss --use postcss-nested --use postcss-import --use autoprefixer --use postcss-csso --no-map --output dist/styles/index.css",
+    "build:eleventy": "eleventy",
+    "test:html": "htmlhint dist/*.html",
+    "test:styles": "stylelint \"src/styles/**/*.scss\"",
+    "test:scripts": "eslint src/scripts/",
+    "test:editorconfig": "editorconfig-checker"
   },
   "browserslist": [
     "last 2 version",
@@ -27,10 +28,11 @@
     "eslint-config-htmlacademy": "^4.0.2",
     "html-minifier": "^4.0.0",
     "htmlhint": "^0.15.1",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "postcss-csso": "^5.0.1",
-    "sass": "^1.36.0",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
     "stylelint": "^13.13.1",
     "stylelint-order": "^4.1.0"
   }
