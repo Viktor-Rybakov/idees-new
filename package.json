@@ -4,7 +4,7 @@
   "scripts": {
     "start": "rm -rf dist && npm run watch:eleventy & npm run watch:postcss",
     "test": "npm run test:html && npm run test:styles && npm run test:scripts && npm run test:editorconfig",
-    "build": "rm -rf dist && build:eleventy && npm run build:postcss",
+    "build": "rm -rf dist && npm run build:eleventy && npm run build:postcss",
     "watch:postcss": "npx postcss --watch src/styles/index.scss --use postcss-nested --use postcss-import --output dist/styles/index.css",
     "watch:eleventy": "eleventy --serve --quiet --watch",
     "build:postcss": "npx postcss src/styles/index.scss --use postcss-nested --use postcss-import --use autoprefixer --use postcss-csso --no-map --output dist/styles/index.css",
