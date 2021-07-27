@@ -1,0 +1,82 @@
+/* map */
+
+.map {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @media (min-width: 768px) {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+}
+
+.map__wrapper {
+
+  @media (min-width: 640px) {
+    column-count: 2;
+    column-gap: 80px;
+  }
+
+  @media (min-width: 1200px) {
+    column-count: 3;
+    column-gap: 180px;
+  }
+}
+
+
+.map__section {
+  &:not(:last-of-type) {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.map__section-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.map__list {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  list-style: none;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.map__list-item {
+  &:not(:last-of-type) {
+    margin-bottom: 4px;
+  }
+}
+
+.map__link {
+  color: var(--dark-grey);
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--light-grey);
+  }
+}
