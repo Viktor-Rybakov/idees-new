@@ -49,6 +49,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 640px) {
+    max-width: none;
+    margin-right: initial;
+    margin-left: initial;
+  }
 
   &:nth-child(1) {
     margin-bottom: 11px;
