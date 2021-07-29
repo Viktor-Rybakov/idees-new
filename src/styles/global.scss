@@ -23,6 +23,10 @@ body {
   overflow-anchor: none;
 }
 
+body.has-modal {
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
