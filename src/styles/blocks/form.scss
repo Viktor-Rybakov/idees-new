@@ -48,8 +48,9 @@
   align-items: flex-start;
 
   &--submit {
-    flex-direction: column;
-    margin-bottom: 40px;
+    flex-direction: column-reverse;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
     @media (min-width: 600px) {
       flex-direction: row;
@@ -110,20 +111,18 @@
 
   @media (min-width: 1200px) {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
+    padding-top: 6px;
   }
 }
 
 .form__text-field-label {
-  align-self: flex-start;
   color: var(--light-grey);
   font-size: 16px;
   line-height: 22px;
 
   @media (min-width: 1200px) {
-    align-self: baseline;
     margin-right: 20px;
-    margin-bottom: 17px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -131,7 +130,7 @@
 
 .form__text-field {
   flex-grow: 1;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -157,13 +156,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  margin-bottom: 24px;
   color: var(--light-grey);
   cursor: pointer;
   transition: 0.3s;
 
   @media (min-width: 600px) {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &:hover {
