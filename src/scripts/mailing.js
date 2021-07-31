@@ -1,8 +1,9 @@
 export default function mailingSubscribe() {
   const mailingBlock = document.querySelector('.mailing-block');
 
-  if (localStorage.getItem('isCookiesAccepted') && !localStorage.getItem('isSubscribed')) {
+  if (localStorage.getItem('isCookiesAccepted') && !localStorage.getItem('isSubscribeCanceled') && !localStorage.getItem('isSubscribed')) {
     const mailingForm = mailingBlock.querySelector('.mailing-block__form');
+    const cancelButton = mailingBlock.querySelector('.mailing-block__close-button');
 
     setTimeout(() => {
 
@@ -11,6 +12,15 @@ export default function mailingSubscribe() {
       mailingForm.addEventListener('submit', () => {
         mailingBlock.classList.remove('mailing-block--active');
         localStorage.setItem('isSubscribed', true);
+
+        setTimeout(() => {
+          mailingBlock.remove();
+        }, 2000);
+      });
+
+      cancelButton.addEventListener('click', () => {
+        mailingBlock.classList.remove('mailing-block--active');
+        localStorage.setItem('isSubscribeCanceled', true);
 
         setTimeout(() => {
           mailingBlock.remove();
