@@ -1,0 +1,254 @@
+/* Menu */
+
+.menu {
+  flex-direction: column;
+  padding-bottom: 60px;
+  background-color: var(--white);
+}
+
+.menu__container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 34px;
+
+  @media (min-width: 1200px) {
+    padding-top: 200px;
+  }
+}
+
+.menu__navigation {
+  margin-bottom: 100px;
+}
+
+.menu__list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    gap: 50px 40px;
+  }
+}
+
+.menu__item {
+  &--with-sub-list {
+    margin-top: 40px;
+
+    @media (min-width: 600px) {
+      margin-top: 0;
+    }
+  }
+
+  &--projects {
+    @media (min-width: 600px) {
+      grid-column: 1 / span 1;
+    }
+  }
+
+  &--vacancies {
+    @media (min-width: 600px) {
+      grid-column: 1 / span 1;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: 600px) {
+      grid-column: 1 / span 1;
+    }
+  }
+
+  &--services {
+    @media (min-width: 600px) {
+      grid-row: span 4;
+      grid-column: 2 / span 1;
+    }
+  }
+
+  &--agency {
+    @media (min-width: 600px) {
+      grid-row: span 4;
+      grid-column: 1 / span 1;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 1200px) {
+      grid-column: 3 / span 1;
+      margin-top: 0;
+    }
+  }
+
+  &--blog {
+    @media (min-width: 600px) {
+      grid-row: span 4;
+      grid-column: 2 / span 1;
+      margin-top: 40px;
+
+      @media (min-width: 1200px) {
+        grid-column: 4 / span 1;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.menu__link {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--light-grey);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 36px;
+  }
+}
+
+.menu__sub-list {
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}
+
+.menu__sub-item {
+  &:not(:last-of-type) {
+    margin-bottom: 12px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.menu__sub-link {
+  font-size: 16px;
+  line-height: 22px;
+  transition: 0.2s;
+
+  @media (min-width: 1200px) {
+    position: relative;
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      width: 24px;
+      height: 24px;
+      background-image: url("/img/arrow.svg");
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: 0.2s;
+    }
+  }
+
+  &:hover {
+    color: var(--light-grey);
+
+    @media (min-width: 1200px) {
+      padding-left: 30px;
+      color: var(--dark-grey);
+
+      &::before {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.menu__contacts {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu__contact-link {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  white-space: nowrap;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--light-grey);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.menu__contact-link + .menu__contact-link {
+  margin-top: 20px;
+
+  @media (min-width: 800px) {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
+.menu__socials-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 800px) {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+.menu__socials-item {
+  &:not(:last-of-type) {
+    margin-right: 24px;
+  }
+}
+
+.menu__socials-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--light-grey);
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

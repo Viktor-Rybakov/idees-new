@@ -4,15 +4,28 @@
 
   {% include 'header.njk' %}
 
-  <main class="page__main">
-    {{ content | safe }}
-  </main>
+  {% if permalink === '404.html' %}
+    <main class="page__main page__main--full-height">
+      {{ content | safe }}
+    </main>
+  {% else%}
+    <main class="page__main">
+      {{ content | safe }}
+    </main>
+  {% endif %}
 
-  {% include 'footer.njk' %}
+  {% if permalink != '404.html' %}
+    {% include 'footer.njk' %}
+  {% endif %}
+
+  {% set headerMode = 'form' %}
+  {% include 'form.njk' %}
+
+  {% set headerMode = 'menu' %}
+  {% include 'menu.njk' %}
 
   {% include 'cookies.njk' %}
   {% include 'mailing.njk' %}
-  {% include 'form.njk' %}
 
   <script type="module" src="/scripts/index.js"></script>
 

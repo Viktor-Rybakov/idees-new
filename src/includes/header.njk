@@ -7,11 +7,32 @@
 
   <a class="header__button-link header__button-link--express" href="#">экспресс - дизайн</a>
 
-  <a class="header__button-link header__button-link--project js-form-open" href="form.html">Начать проект</a>
+  {% if headerMode !== 'form' %}
+    <button class="header__button-link header__button-link--project js-form-open" type="button">Начать проект</button>
+  {% endif %}
 
-  <a class="header__button-link header__button-link--menu js-menu-open" href="menu.html" aria-label="Меню">
-    <svg class="header__burger-icon" width="40" height="10" aria-hidden="true">
-      <use xlink:href="img/sprite.svg#menu-burger"></use>
-    </svg>
-  </a>
+  {% if headerMode !== 'form' and headerMode !== 'menu' %}
+    <button class="header__button-link header__button-link--menu js-menu-open" type="button" aria-label="Меню">
+      <svg class="header__burger-icon" width="40" height="10" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#menu-burger"></use>
+      </svg>
+    </button>
+  {% endif %}
+
+  {% if headerMode === 'form' %}
+    <button class="header__button-link header__button-link--menu js-form-close" type="button" aria-label="Закрыть форму">
+      <svg class="header__cross-icon" width="24" height="24" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#menu-cross"></use>
+      </svg>
+    </button>
+  {% endif %}
+
+  {% if headerMode === 'menu' %}
+    <button class="header__button-link header__button-link--menu-close js-menu-close" type="button" aria-label="Закрыть меню">
+      <span class="header__button-text">Меню</span>
+      <svg class="header__cross-icon" width="24" height="24" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#menu-cross"></use>
+      </svg>
+    </button>
+  {% endif %}
 </header>

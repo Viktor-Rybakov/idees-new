@@ -1,162 +1,154 @@
-{% if form === 'page' %}
-  <div class="form-section container">
-{% else %}
-  <div class="form-section modal">
-    <div class="container">
+<section class="form-section modal">
+  {% include 'header.njk' %}
 
-  {% include 'form-header.njk' %}
-{% endif %}
+  <div class="form-section__container container">
+    <div class="form-section__title-container">
+      <h1 class="form-section__title">Расскажите о вашем проекте</h1>
 
-  <div class="form-section__title-container">
-    <h1 class="form-section__title">Расскажите о вашем проекте</h1>
-
-    <p class="form-section__phone">
-      <span>Или свяжитесь с нами:</span>
-      <a class="form-section__phone-link" href="tel:+74951966585">+7 (495) 196 65 85</a>
-    </p>
-  </div>
-
-  <form class="form" method="POST" action="https://echo.htmlacademy.ru/">
-    <fieldset class="form__fieldset">
-      <legend class="form__legend">Тип проекта</legend>
-
-      <div class="form__row">
-        <input class="form__checkbox visually-hidden" type="checkbox" id="comlex-project" name="comlex-project">
-        <label class="form__checkbox-label" for="comlex-project">Комплексный проект</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="strategy-project" name="strategy-project">
-        <label class="form__checkbox-label" for="strategy-project">Стратегия</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="branding-project" name="branding-project">
-        <label class="form__checkbox-label" for="branding-project">Брендинг</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="disign-project" name="disign-project">
-        <label class="form__checkbox-label" for="disign-project">Дизайн</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="develop-project" name="develop-project">
-        <label class="form__checkbox-label" for="develop-project">Разработка</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="other-project" name="other-project">
-        <label class="form__checkbox-label" for="other-project">Другое</label>
-      </div>
-    </fieldset>
-
-    <fieldset class="form__fieldset">
-      <legend class="form__legend">Бюджет</legend>
-
-      <div class="form__row">
-        <input class="form__checkbox visually-hidden" type="radio" id="up-200" name="budget">
-        <label class="form__checkbox-label" for="up-200">До 200 тыс</label>
-
-        <input class="form__checkbox visually-hidden" type="radio" id="200-500" name="budget">
-        <label class="form__checkbox-label" for="200-500">200 тыс - 500 тыс</label>
-
-        <input class="form__checkbox visually-hidden" type="radio" id="500-1000" name="budget">
-        <label class="form__checkbox-label" for="500-1000">500 тыс - 1 млн</label>
-
-        <input class="form__checkbox visually-hidden" type="radio" id="1000-2000" name="budget">
-        <label class="form__checkbox-label" for="1000-2000">1 млн - 2 млн</label>
-
-        <input class="form__checkbox visually-hidden" type="radio" id="from-2000" name="budget">
-        <label class="form__checkbox-label" for="from-2000">от 2 млн</label>
-      </div>
-    </fieldset>
-
-    <fieldset class="form__fieldset">
-      <legend class="form__legend form__legend--big">Задача и контакты</legend>
-
-      <div class="form__field-wrapper">
-        <label class="form__text-field-label" for="task">описание задачи</label>
-        <input class="form__text-field" type="text" id="task" name="task">
-      </div>
-
-      <div class="form__field-wrapper">
-        <label class="form__text-field-label" for="name">имя и фамилия</label>
-        <input class="form__text-field" type="text" id="name" name="name">
-      </div>
-
-      <div class="form__field-wrapper">
-        <label class="form__text-field-label" for="phone">телефон</label>
-        <input class="form__text-field" type="tel" id="phone" name="phone" required
-              pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
-              autocomplete="on">
-      </div>
-
-      <div class="form__field-wrapper">
-        <label class="form__text-field-label" for="email">email</label>
-        <input class="form__text-field" type="email" id="email" name="email" required
-                autocomplete="on">
-      </div>
-
-      <div class="form__field-wrapper">
-        <label class="form__text-field-label" for="city">город</label>
-        <input class="form__text-field" type="text" id="city" name="city">
-      </div>
-
-      <div class="form__field-wrapper">
-        <label class="form__text-field-label" for="company">компания</label>
-        <input class="form__text-field" type="text" id="company" name="company">
-      </div>
-
-      <div class="form__field-wrapper">
-        <label class="form__text-field-label" for="site">ссылка на сайт</label>
-        <input class="form__text-field" type="text" id="site" name="site">
-      </div>
-    </fieldset>
-
-    <fieldset class="form__fieldset">
-      <legend class="form__legend">как вы узнали о нас?</legend>
-
-      <div class="form__row">
-        <input class="form__checkbox visually-hidden" type="checkbox" id="social" name="social">
-        <label class="form__checkbox-label" for="social">Соцсети</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="advertisement" name="advertisement">
-        <label class="form__checkbox-label" for="advertisement">Реклама</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="recommendations" name="recommendations">
-        <label class="form__checkbox-label" for="recommendations">Рекомендации</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="internet" name="internet">
-        <label class="form__checkbox-label" for="internet">Интернет</label>
-
-        <input class="form__checkbox visually-hidden" type="checkbox" id="mass-media" name="mass-media">
-        <label class="form__checkbox-label" for="mass-media">СМИ</label>
-      </div>
-    </fieldset>
-
-    <div class="form__row form__row--bottom form__row--submit">
-      <button class="button" type="submit">
-        <span class="button__icon-wrapper">
-          <svg class="button__icon" width="24" height="24">
-            <use xlink:href="/img/sprite.svg#arrow-right"></use>
-          </svg>
-        </span>
-
-        <span class="button__text">отправить заявку</span>
-      </button>
-
-      <input class="visually-hidden" id="file" type="file" name="file">
-      <label class="form__file" for="file">
-        <span class="form__file-icon-wrapper">
-          <svg class="form__file-icon" width="24" height="24">
-            <use xlink:href="/img/sprite.svg#add-file"></use>
-          </svg>
-        </span>
-
-        <span class="form__file-text">
-          прикрепить файл<br>
-          <small>не более 10mb</small>
-        </span>
-      </label>
+      <p class="form-section__phone">
+        <span>Или свяжитесь с нами:</span>
+        <a class="form-section__phone-link" href="tel:+74951966585">+7 (495) 196 65 85</a>
+      </p>
     </div>
 
-    <p class="form__text">
-      Отправляя заявку, я соглашаюсь передать свои персональные данные, содержащиеся в анкете и всех приложенных файлах, исключительно для включения во внешний кадровый резерв и чтобы компания могла предлагать мне вакансии. Я понимаю и соглашаюсь, что мои данные будут храниться и обрабатываться в течение пяти лет, в соответствии с Федеральным законом «О персональных данных».
-    </p>
-  </form>
-</div>
+    <form class="form" method="POST" action="https://echo.htmlacademy.ru/">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Тип проекта</legend>
 
-{% if form !== 'page' %}
+        <div class="form__row">
+          <input class="form__checkbox visually-hidden" type="checkbox" id="comlex-project" name="comlex-project">
+          <label class="form__checkbox-label" for="comlex-project">Комплексный проект</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="strategy-project" name="strategy-project">
+          <label class="form__checkbox-label" for="strategy-project">Стратегия</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="branding-project" name="branding-project">
+          <label class="form__checkbox-label" for="branding-project">Брендинг</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="disign-project" name="disign-project">
+          <label class="form__checkbox-label" for="disign-project">Дизайн</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="develop-project" name="develop-project">
+          <label class="form__checkbox-label" for="develop-project">Разработка</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="other-project" name="other-project">
+          <label class="form__checkbox-label" for="other-project">Другое</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Бюджет</legend>
+
+        <div class="form__row">
+          <input class="form__checkbox visually-hidden" type="radio" id="up-200" name="budget">
+          <label class="form__checkbox-label" for="up-200">До 200 тыс</label>
+
+          <input class="form__checkbox visually-hidden" type="radio" id="200-500" name="budget">
+          <label class="form__checkbox-label" for="200-500">200 тыс - 500 тыс</label>
+
+          <input class="form__checkbox visually-hidden" type="radio" id="500-1000" name="budget">
+          <label class="form__checkbox-label" for="500-1000">500 тыс - 1 млн</label>
+
+          <input class="form__checkbox visually-hidden" type="radio" id="1000-2000" name="budget">
+          <label class="form__checkbox-label" for="1000-2000">1 млн - 2 млн</label>
+
+          <input class="form__checkbox visually-hidden" type="radio" id="from-2000" name="budget">
+          <label class="form__checkbox-label" for="from-2000">от 2 млн</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__legend form__legend--big">Задача и контакты</legend>
+
+        <div class="form__field-wrapper">
+          <label class="form__text-field-label" for="task">описание задачи</label>
+          <input class="form__text-field" type="text" id="task" name="task">
+        </div>
+
+        <div class="form__field-wrapper">
+          <label class="form__text-field-label" for="name">имя и фамилия</label>
+          <input class="form__text-field" type="text" id="name" name="name">
+        </div>
+
+        <div class="form__field-wrapper">
+          <label class="form__text-field-label" for="phone">телефон</label>
+          <input class="form__text-field" type="tel" id="phone" name="phone" required
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                autocomplete="on">
+        </div>
+
+        <div class="form__field-wrapper">
+          <label class="form__text-field-label" for="email">email</label>
+          <input class="form__text-field" type="email" id="email" name="email" required
+                  autocomplete="on">
+        </div>
+
+        <div class="form__field-wrapper">
+          <label class="form__text-field-label" for="city">город</label>
+          <input class="form__text-field" type="text" id="city" name="city">
+        </div>
+
+        <div class="form__field-wrapper">
+          <label class="form__text-field-label" for="company">компания</label>
+          <input class="form__text-field" type="text" id="company" name="company">
+        </div>
+
+        <div class="form__field-wrapper">
+          <label class="form__text-field-label" for="site">ссылка на сайт</label>
+          <input class="form__text-field" type="text" id="site" name="site">
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">как вы узнали о нас?</legend>
+
+        <div class="form__row">
+          <input class="form__checkbox visually-hidden" type="checkbox" id="social" name="social">
+          <label class="form__checkbox-label" for="social">Соцсети</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="advertisement" name="advertisement">
+          <label class="form__checkbox-label" for="advertisement">Реклама</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="recommendations" name="recommendations">
+          <label class="form__checkbox-label" for="recommendations">Рекомендации</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="internet" name="internet">
+          <label class="form__checkbox-label" for="internet">Интернет</label>
+
+          <input class="form__checkbox visually-hidden" type="checkbox" id="mass-media" name="mass-media">
+          <label class="form__checkbox-label" for="mass-media">СМИ</label>
+        </div>
+      </fieldset>
+
+      <div class="form__row form__row--bottom form__row--submit">
+        <button class="button" type="submit">
+          <span class="button__icon-wrapper">
+            <svg class="button__icon" width="24" height="24">
+              <use xlink:href="/img/sprite.svg#arrow-right"></use>
+            </svg>
+          </span>
+
+          <span class="button__text">отправить заявку</span>
+        </button>
+
+        <input class="visually-hidden" id="file" type="file" name="file">
+        <label class="form__file" for="file">
+          <span class="form__file-icon-wrapper">
+            <svg class="form__file-icon" width="24" height="24">
+              <use xlink:href="/img/sprite.svg#add-file"></use>
+            </svg>
+          </span>
+
+          <span class="form__file-text">
+            прикрепить файл<br>
+            <small>не более 10mb</small>
+          </span>
+        </label>
+      </div>
+
+      <p class="form__text">
+        Отправляя заявку, я соглашаюсь передать свои персональные данные, содержащиеся в анкете и всех приложенных файлах, исключительно для включения во внешний кадровый резерв и чтобы компания могла предлагать мне вакансии. Я понимаю и соглашаюсь, что мои данные будут храниться и обрабатываться в течение пяти лет, в соответствии с Федеральным законом «О персональных данных».
+      </p>
+    </form>
   </div>
-{% endif %}
+</section>

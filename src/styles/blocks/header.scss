@@ -1,10 +1,12 @@
 /* Header */
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 78px;
+  padding-right: 210px;
   color: var(--dark-grey);
 
   @media (min-width: 560px) {
@@ -14,7 +16,7 @@
 
 .header__logo-link {
   display: block;
-  margin-right: 8%;
+  margin-right: 9%;
 
   &:hover {
     color: var(--grey);
@@ -35,10 +37,13 @@
 
 .header__button-link {
   display: block;
+  padding: 0;
   color: currentColor;
   font-weight: 500;
   white-space: nowrap;
   text-transform: lowercase;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   transition: 0.2s;
 
@@ -47,16 +52,27 @@
   }
 
   &--menu {
+    position: absolute;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    margin-right: -4px;
+    margin-right: 12px;
 
     @media (min-width: 560px) {
-      margin-right: 0;
+      margin-right: 16px;
     }
+  }
+
+  &--menu-close {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 16px;
   }
 
   &--express {
@@ -80,9 +96,16 @@
 
     @media (min-width: 560px) {
       display: block;
-      margin-right: 9%;
-      margin-left: auto;
     }
+  }
+}
+
+.header__button-text {
+  display: none;
+
+  @media (min-width: 800px) {
+    display: block;
+    margin-right: 10px;
   }
 }
 
