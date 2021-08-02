@@ -23,10 +23,14 @@
 
     @media (min-width: 600px) {
       grid-template-columns: min-content 1fr 120px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
 
     @media (min-width: 960px) {
       grid-template-columns: min-content 1fr 1fr 120px;
+      padding-top: 19px;
+      padding-bottom: 19px;
     }
   }
 }
