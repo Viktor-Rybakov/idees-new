@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 1fr 120px;
   align-items: center;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--dark-grey);
 
   @media (min-width: 960px) {
@@ -23,14 +23,14 @@
 
     @media (min-width: 600px) {
       grid-template-columns: min-content 1fr 120px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     @media (min-width: 960px) {
       grid-template-columns: min-content 1fr 1fr 120px;
-      padding-top: 19px;
-      padding-bottom: 19px;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
   }
 }
