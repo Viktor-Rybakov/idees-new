@@ -44,32 +44,4 @@
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 17.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 000-.32M11.5 11.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 100-.32M16.5 20.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 100-.32M14.5 15.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 000-.32"/>
     <path stroke-linecap="round" stroke-linejoin="round" clip-rule="evenodd" stroke-width="2" d="M15 4a11 11 0 0011 11A11 11 0 1115 4z"/>
   </symbol>
-
-  <symbol id="strategy" viewBox="0 0 72 72" fill="none">
-    <g clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-      <path d="M36 63v0A27 27 0 019 36v0A27 27 0 0136 9v0a27 27 0 0127 27v0a27 27 0 01-27 27z"/>
-      <path d="M36 63v0a18 18 0 01-18-18v0a18 18 0 0118-18v0a18 18 0 0118 18v0a18 18 0 01-18 18z"/>
-      <path d="M36 63v0c-5.8 0-10.5-4.7-10.5-10.5v0C25.5 46.7 30.2 42 36 42v0c5.8 0 10.5 4.7 10.5 10.5v0C46.5 58.3 41.8 63 36 63z"/>
-    </g>
-  </symbol>
-
-  <symbol id="branding" viewBox="0 0 72 72" fill="none">
-    <g clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-      <path d="M43.76 8.67a11 11 0 11-15.55 15.55A11 11 0 0143.76 8.67M63.67 43.15a10.98 10.98 0 11-15.53 15.53 10.98 10.98 0 0115.53-15.53M23.86 43.15A10.98 10.98 0 118.33 58.68a10.98 10.98 0 0115.53-15.53"/>
-      <path d="M52.26 23.18A22.99 22.99 0 1119.75 55.7a22.99 22.99 0 0132.5-32.5"/>
-    </g>
-  </symbol>
-
-  <symbol id="develop" viewBox="0 0 72 72" fill="none">
-    <g clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-      <path d="M42 42H9V9h33v33z"/>
-      <path d="M39.04 24.5a19.54 19.54 0 0123.47 23.46A19.35 19.35 0 0147.96 62.5 19.54 19.54 0 0124.5 39.04a19.35 19.35 0 0114.54-14.55z"/>
-    </g>
-  </symbol>
-
-  <symbol id="design" viewBox="0 0 72 72" fill="none">
-    <g clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-      <path d="M12 43.5h18v18H12v-18zM52.5 63v0C46.7 63 42 58.3 42 52.5v0C42 46.7 46.7 42 52.5 42v0C58.3 42 63 46.7 63 52.5v0C63 58.3 58.3 63 52.5 63zM36 9L22.5 30h27L36 9z"/>
-    </g>
-  </symbol>
 </svg>
