@@ -1,0 +1,17 @@
+/* cases-section */
+
+.cases-section__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cases-section__item {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-top: 1px solid var(--border-color);
+
+  &:not(:first-of-type) {
+    border-bottom: 1px solid var(--border-color);
+  }
+}

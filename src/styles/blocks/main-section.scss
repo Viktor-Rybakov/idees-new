@@ -1,0 +1,25 @@
+/* main-section */
+
+.main-section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  height: calc(100vh - 98px);
+  min-height: 800px;
+  max-height: 1000px;
+  padding-top: 200px;
+  padding-bottom: 177px;
+}
+
+.main-section__slogan {
+  margin-top: 105px;
+  margin-bottom: 0;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 102px;
+}
+
+.main-section__button {
+  align-self: flex-end;
+  margin-right: 188px;
+}

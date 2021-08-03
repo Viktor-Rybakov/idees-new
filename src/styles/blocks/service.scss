@@ -1,0 +1,90 @@
+/* service */
+
+.service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &::before {
+    display: block;
+    width: 24px;
+    margin-right: 75px;
+    color: var(--light-grey);
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &::after {
+    display: block;
+    order: 3;
+  }
+
+
+  &--strategy {
+    &::before {
+      content: "01";
+    }
+
+    &::after {
+      content: url("/img/strategy.svg");
+      width: 186px;
+      height: 60px;
+    }
+  }
+
+  &--branding {
+    &::before {
+      content: "02";
+    }
+
+    &::after {
+      content: url("/img/branding.svg");
+      width: 186px;
+      height: 60px;
+    }
+  }
+
+  &--develop {
+    &::before {
+      content: "03";
+    }
+
+    &::after {
+      content: url("/img/develop.svg");
+      width: 186px;
+      height: 60px;
+    }
+  }
+
+  &--design {
+    &::before {
+      content: "04";
+    }
+
+    &::after {
+      content: url("/img/design.svg");
+      width: 186px;
+      height: 60px;
+    }
+  }
+}
+
+.service__title {
+  order: 2;
+  min-width: 210px;
+  margin: 0;
+  margin-right: auto;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.service__description {
+  order: 4;
+  max-width: 373px;
+  margin: 0;
+  margin-left: 14.2%;
+  color: var(--light-grey);
+  font-size: 18px;
+  line-height: 24px;
+}
