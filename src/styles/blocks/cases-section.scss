@@ -1,5 +1,9 @@
 /* cases-section */
 
+.cases-section {
+  padding-top: 70px;
+}
+
 .cases-section__list {
   margin: 0;
   padding: 0;
@@ -7,9 +11,14 @@
 }
 
 .cases-section__item {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   border-top: 1px solid var(--border-color);
+
+  @media (min-width: 800px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 
   &:not(:first-of-type) {
     border-bottom: 1px solid var(--border-color);

@@ -2,33 +2,54 @@
 
 .feedback {
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "title title"
-    "text text"
-    "author actions";
-  gap: 20px;
+    "title"
+    "text"
+    "author"
+    "actions";
   margin: 0;
+
+  @media (min-width: 860px) {
+    grid-template-columns: 1fr max-content;
+    grid-template-areas:
+      "title title"
+      "text text"
+      "author actions";
+    gap: 20px;
+  }
 }
 
 .feedback__title {
   grid-area: title;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   color: var(--grey);
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 900;
-  line-height: 24px;
-  letter-spacing: 4px;
+  line-height: 18px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+
+  @media (min-width: 860px) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 4px;
+  }
 }
 
 .feedback__text {
   grid-area: text;
   margin: 0;
-  margin-bottom: 60px;
-  font-size: 28px;
-  line-height: 42px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: 860px) {
+    margin-bottom: 60px;
+    font-size: 28px;
+    line-height: 42px;
+  }
 }
 
 .feedback__author {
@@ -37,26 +58,48 @@
   grid-auto-rows: 1fr;
   grid-area: author;
   gap: 8px 16px;
+  margin-bottom: 16px;
+
+  @media (min-width: 860px) {
+    margin-bottom: 0;
+  }
 }
 
 .feedback__author-avatar {
   display: block;
   grid-row: span 2;
-  width: 72px;
-  height: 72px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
+
+  @media (min-width: 860px) {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .feedback__name {
   align-self: flex-end;
-  font-size: 18px;
-  line-height: 24px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: 860px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .feedback__role {
   align-self: flex-start;
-  font-size: 14px;
-  line-height: 20px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media (min-width: 860px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .feedback__actions {
@@ -69,11 +112,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 48px;
-  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
   padding: 0;
-  padding-right: 24px;
-  padding-left: 24px;
   color: var(--dark-grey);
   font-size: 14px;
   line-height: 20px;
@@ -83,32 +125,57 @@
   border-radius: 99em;
   transition: 0.2s;
 
+  @media (min-width: 860px) {
+    width: auto;
+    height: auto;
+    min-height: 48px;
+    margin-right: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
   &:hover {
     color: var(--light-grey);
   }
 }
 
 .feedback__watch-link-icon {
-  margin-right: 4px;
   fill: currentColor;
+}
+
+.feedback__watch-link-text {
+  display: none;
+
+  @media (min-width: 860px) {
+    display: block;
+    margin-left: 4px;
+  }
 }
 
 .feedback__facebook-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 48px;
+  min-height: 40px;
   padding: 0;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
   color: var(--blue-color);
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
   white-space: nowrap;
   text-transform: lowercase;
   background-color: var(--light);
   border-radius: 99em;
   transition: 0.2s;
+
+  @media (min-width: 860px) {
+    min-height: 48px;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 
   &:hover {
     color: var(--light-grey);
@@ -117,14 +184,26 @@
 
 .feedback__next-button {
   flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  margin-left: 32px;
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
   color: var(--dark-grey);
   border: 1px solid currentColor;
   border-radius: 50%;
 
+  @media (min-width: 860px) {
+    width: 48px;
+    height: 48px;
+    margin-left: 32px;
+  }
+
   &:hover {
     color: var(--light-grey);
   }
+}
+
+.feedback__next-button-icon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
 }
