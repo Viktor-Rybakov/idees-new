@@ -56,6 +56,13 @@
 }
 
 .button__text {
-  margin-left: 10px;
   white-space: nowrap;
+}
+
+.button__icon-wrapper + .button__text {
+  margin-left: 10px;
+}
+
+.button__text + .button__icon-wrapper {
+  margin-left: 10px;
 }
