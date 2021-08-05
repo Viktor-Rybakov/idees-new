@@ -1,0 +1,32 @@
+.up-button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--dark-grey);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  opacity: 0.5;
+  transition: 0.3s;
+
+  &--active {
+    display: flex;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.up-button__icon {
+  width: 28px;
+  height: 28px;
+  stroke: var(--white);
+}

@@ -15,12 +15,29 @@
   padding-bottom: 32px;
   border-top: 1px solid var(--border-color);
 
-  @media (min-width: 800px) {
+  @media (min-width: 860px) {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 
   &:not(:first-of-type) {
     border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.cases-section__list--blocks {
+  @media (min-width: 860px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .cases-section__item {
+      &:nth-child(odd) {
+        padding-right: 20px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 20px;
+      }
+    }
   }
 }

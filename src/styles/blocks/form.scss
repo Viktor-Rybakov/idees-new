@@ -69,9 +69,11 @@
   color: var(--light-grey);
   font-size: 14px;
   line-height: 20px;
+  background-color: transparent;
   border: 1px solid var(--light-grey);
   border-radius: 99em;
   cursor: pointer;
+  transition: 0.3s;
 
   @media (min-width: 1200px) {
     min-height: 38px;

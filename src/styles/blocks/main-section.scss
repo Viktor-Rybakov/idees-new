@@ -5,9 +5,10 @@
   flex-direction: column;
   justify-content: flex-end;
   height: calc(100vh - 88px);
+  height: -webkit-fill-available;
   min-height: 150px;
   padding-top: 20px;
-  padding-bottom: 160px;
+  padding-bottom: 60px;
 
   @media (min-width: 860px) {
     flex-direction: column-reverse;
