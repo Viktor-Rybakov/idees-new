@@ -7,13 +7,13 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  background-color: var(--dark-grey);
+  padding: 0;
+  background-color: rgba(38, 38, 38, 0.5);
   border: none;
   border-radius: 50%;
   cursor: pointer;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  opacity: 0.5;
   transition: 0.3s;
 
   &--active {
@@ -21,7 +21,7 @@
   }
 
   &:hover {
-    opacity: 0.8;
+    background-color: rgba(38, 38, 38, 0.8);
   }
 }
 
