@@ -28,14 +28,18 @@
   font-weight: 500;
   line-height: 36px;
 
-  @media (min-width: 860px) {
-    margin-top: 105px;
-    margin-bottom: 0;
-    font-size: 50px;
-    line-height: 56px;
+  @media (min-width: 320px) {
+    font-size: calc(28px + (96 - 28) * ((100vw - 320px) / (1400 - 320)));
+    line-height: 1.2;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 860px) {
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1400px) {
+    margin-top: 105px;
     font-size: 96px;
     line-height: 102px;
   }
@@ -46,6 +50,10 @@
 
   @media (min-width: 860px) {
     align-self: flex-end;
+    margin-right: 120px;
+  }
+
+  @media (min-width: 1400px) {
     margin-right: 188px;
   }
 }
