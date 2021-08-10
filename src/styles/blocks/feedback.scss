@@ -50,6 +50,12 @@
     font-size: 28px;
     line-height: 42px;
   }
+
+  &--single {
+    @media (min-width: 860px) {
+      max-width: 78%;
+    }
+  }
 }
 
 .feedback__author {
