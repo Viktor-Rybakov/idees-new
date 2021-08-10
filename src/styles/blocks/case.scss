@@ -1,6 +1,7 @@
 /* case */
 
 .case {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -53,15 +54,16 @@
   }
 }
 
+.case__image-wrapper {
+  grid-area: image;
+  overflow: hidden;
+}
+
 .case__image {
   display: block;
-  grid-area: image;
   width: 100%;
   height: auto;
-
-  @media (min-width: 860px) {
-    width: 790px;
-  }
+  transition: 0.5s;
 }
 
 .case__link {
@@ -72,9 +74,23 @@
   @media (min-width: 860px) {
     margin-bottom: 40px;
   }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+  }
 }
 
-.cases-section__list--blocks {
+.case:hover .case__image {
+  transform: scale(1.03);
+}
+
+.cases-section__list--blocks,
+.project__similar-list {
   @media (min-width: 860px) {
     .case {
       display: grid;
