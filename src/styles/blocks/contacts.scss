@@ -1,0 +1,126 @@
+.contacts__section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 200px;
+    padding-bottom: 124px;
+  }
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__link {
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+  transition: 0.3s;
+
+  &:last-of-type {
+    margin-bottom: 44px;
+  }
+
+  &:hover {
+    color: var(--grey);
+  }
+
+  @media (min-width: 960px) {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 70px;
+    line-height: 76px;
+  }
+}
+
+.contacts__socials-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__socials-item {
+  &:not(:last-of-type) {
+    margin-right: 16px;
+
+    @media (min-width: 960px) {
+      margin-right: 25px;
+    }
+
+    @media (min-width: 1400px) {
+      margin-right: 25px;
+    }
+  }
+}
+
+.contacts__social-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--grey);
+  }
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.contacts__address {
+  max-width: 500px;
+  margin: 0;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 800px;
+}
+
+.contacts__form {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media (min-width: 800px) {
+    padding-top: 154px;
+    padding-bottom: 110px;
+  }
+}
+
+.contacts__section-title {
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+
+  @media (min-width: 800px) {
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
