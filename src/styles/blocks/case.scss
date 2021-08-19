@@ -1,13 +1,11 @@
 /* case */
 
 .case {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "image"
     "title"
-    "description"
     "link";
 
 
@@ -16,46 +14,64 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "title image"
-      "description image"
       "link image";
     column-gap: 40px;
   }
 }
 
 .case__title {
-  grid-area: title;
-  margin-top: 24px;
+  margin: 0;
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
+  transition: 0.3s;
 
   @media (min-width: 860px) {
-    margin-top: 40px;
     margin-bottom: 8px;
     font-size: 30px;
     line-height: 36px;
   }
+
+  &:hover {
+    color: var(--light-grey);
+  }
 }
 
 .case__description {
-  grid-area: description;
   max-width: 515px;
   margin: 0;
-  margin-bottom: 32px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  transition: 0.3s;
 
   @media (min-width: 860px) {
-    margin-bottom: 0;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  &:hover {
+    color: var(--light-grey);
+  }
+}
+
+.case__title-link-wrapper {
+  display: block;
+  grid-area: title;
+  margin-top: 24px;
+  margin-bottom: 32px;
+
+  @media (min-width: 860px) {
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 }
 
 .case__image-wrapper {
+  display: block;
   grid-area: image;
+  min-width: 0;
   overflow: hidden;
 }
 
@@ -63,6 +79,7 @@
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
   transition: 0.5s;
 }
 
@@ -74,18 +91,9 @@
   @media (min-width: 860px) {
     margin-bottom: 40px;
   }
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
-  }
 }
 
-.case:hover .case__image {
+.case__image-wrapper:hover .case__image {
   transform: scale(1.03);
 }
 
@@ -98,7 +106,6 @@
       grid-template-areas:
         "image"
         "title"
-        "description"
         "link";
     }
 
@@ -106,18 +113,24 @@
       line-height: 26px;
     }
 
-    .case__description {
+    .case__title-link-wrapper {
       margin-bottom: 64px;
     }
 
     .case__image {
       width: 100%;
       height: 400px;
-      object-fit: cover;
     }
 
     .case__link {
       margin-bottom: 0;
     }
+  }
+}
+
+.cases-section__list--without-top-borders,
+.project__similar-list {
+  .case__description {
+    margin-bottom: 0;
   }
 }

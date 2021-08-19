@@ -32,6 +32,15 @@
     grid-template-columns: 1fr 180px;
   }
 
+  &::after {
+    width: 180px;
+    height: 60px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180px 60px;
+  }
+
 
   &:nth-child(even) {
 
@@ -85,9 +94,7 @@
 
     &::after {
       @media (min-width: 1480px) {
-        content: url("/img/strategy.svg");
-        width: 180px;
-        height: 60px;
+        background-image: url("/img/strategy.svg");
       }
     }
   }
@@ -99,9 +106,7 @@
 
     &::after {
       @media (min-width: 1480px) {
-        content: url("/img/branding.svg");
-        width: 180px;
-        height: 60px;
+        background-image: url("/img/branding.svg");
       }
     }
   }
@@ -113,9 +118,7 @@
 
     &::after {
       @media (min-width: 1480px) {
-        content: url("/img/develop.svg");
-        width: 180px;
-        height: 60px;
+        background-image: url("/img/develop.svg");
       }
     }
   }
@@ -127,9 +130,7 @@
 
     &::after {
       @media (min-width: 1480px) {
-        content: url("/img/design.svg");
-        width: 180px;
-        height: 60px;
+        background-image: url("/img/design.svg");
       }
     }
   }

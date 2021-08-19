@@ -29,10 +29,16 @@
 
   &::after {
     display: none;
-    order: 3;
 
     @media (min-width: 860px) {
       display: block;
+      order: 3;
+      width: 180px;
+      height: 60px;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 180px 60px;
     }
   }
 
@@ -43,9 +49,7 @@
     }
 
     &::after {
-      content: url("/img/strategy.svg");
-      width: 180px;
-      height: 60px;
+      background-image: url("/img/strategy.svg");
     }
   }
 
@@ -55,9 +59,7 @@
     }
 
     &::after {
-      content: url("/img/branding.svg");
-      width: 180px;
-      height: 60px;
+      background-image: url("/img/branding.svg");
     }
   }
 
@@ -67,9 +69,7 @@
     }
 
     &::after {
-      content: url("/img/develop.svg");
-      width: 180px;
-      height: 60px;
+      background-image: url("/img/develop.svg");
     }
   }
 
@@ -79,9 +79,7 @@
     }
 
     &::after {
-      content: url("/img/design.svg");
-      width: 180px;
-      height: 60px;
+      background-image: url("/img/design.svg");
     }
   }
 }

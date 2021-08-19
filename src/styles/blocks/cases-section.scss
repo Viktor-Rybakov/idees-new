@@ -41,3 +41,15 @@
     }
   }
 }
+
+.cases-section__list--without-top-borders {
+  .cases-section__item {
+    padding-top: 0;
+    border-top: none;
+    border-bottom: 1px solid var(--border-color);
+
+    @media (min-width: 860px) {
+      padding-top: 0;
+    }
+  }
+}

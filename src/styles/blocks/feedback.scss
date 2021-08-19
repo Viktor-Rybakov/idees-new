@@ -56,6 +56,13 @@
       max-width: 78%;
     }
   }
+
+  &--small {
+    @media (min-width: 860px) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
 }
 
 .feedback__author {

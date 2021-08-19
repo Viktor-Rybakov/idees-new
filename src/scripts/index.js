@@ -5,6 +5,7 @@ import setModal from './modal.js';
 import setProjectsList from './projecsts.js';
 import setScrollTop from './scroll-top.js';
 import setFullHeight from './full-height.js';
+import setAnimation from './animation.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   setModal('.modal', '.form-section', '.js-form-open', '.js-form-close');
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setProjectsList();
   setScrollTop();
   setFullHeight();
+  setAnimation();
 });

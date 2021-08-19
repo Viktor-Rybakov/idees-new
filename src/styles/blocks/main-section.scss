@@ -27,6 +27,7 @@
   font-size: 28px;
   font-weight: 500;
   line-height: 36px;
+  pointer-events: none;
 
   @media (min-width: 320px) {
     font-size: calc(28px + (96 - 28) * ((100vw - 320px) / (1400 - 320)));
