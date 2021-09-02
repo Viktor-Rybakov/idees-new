@@ -1,58 +1,33 @@
 export default function setAnimation() {
   const animationSection = document.querySelector('.animation-section');
-  const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-  function getMousePosition (event, elem) {
-    const bounds = elem.getBoundingClientRect();
-    const x = event.clientX - bounds.left;
-    const y = event.clientY - bounds.top;
-    return {x: x, y: y};
-  }
 
   function setElemPosition (elem, x, y) {
-    elem.style.setProperty('--mouse-x', `${x}px`);
-    elem.style.setProperty('--mouse-y', `${y}px`);
+    elem.style.setProperty('--position-x', `${x - elem.offsetWidth / 2}px`);
+    elem.style.setProperty('--position-y', `${y - elem.offsetHeight / 2}px`);
   }
 
   if (animationSection) {
-    const animationEelem = animationSection.querySelector('.animation-elem');
+    const animationElem = animationSection.querySelector('.animation-elem');
     const animationTarget = animationSection.querySelector('.animation-target');
-    const timesPerSecond = 5;
-    let wait = false;
 
     animationTarget.x = animationTarget.offsetLeft + animationTarget.offsetWidth / 2;
     animationTarget.y = animationTarget.offsetTop + animationTarget.offsetHeight / 2;
 
-    setElemPosition(animationEelem, animationTarget.x, animationTarget.y);
+    setElemPosition(animationElem, animationTarget.x, animationTarget.y);
 
     window.addEventListener('resize', () => {
       animationTarget.x = animationTarget.offsetLeft + animationTarget.offsetWidth / 2;
       animationTarget.y = animationTarget.offsetTop + animationTarget.offsetHeight / 2;
 
-      setElemPosition(animationEelem, animationTarget.x, animationTarget.y);
+      setElemPosition(animationElem, animationTarget.x, animationTarget.y);
     });
 
-    if(!mediaQuery || !mediaQuery.matches) {
-      animationSection.addEventListener('mousemove', function(event) {
-        if (!wait) {
-          const position = getMousePosition(event, this);
-          setElemPosition(animationEelem, position.x, position.y);
-          wait = true;
+    window.addEventListener('mousemove', (event) => {
+      const mouse = {};
+      mouse.x = event.clientX / window.innerWidth;
+      mouse.y = event.clientY / window.innerHeight;
 
-          setTimeout(() => {
-            wait = false;
-          }, 1000 / timesPerSecond);
-        }
-      });
-
-      animationSection.addEventListener('click', function(event) {
-        const position = getMousePosition(event, this);
-        setElemPosition(animationEelem, position.x, position.y);
-      });
-
-      animationSection.addEventListener('mouseout', () => {
-        setElemPosition(animationEelem, animationTarget.x, animationTarget.y);
-      });
-    }
+      animationElem.style.setProperty('transform', `translate(-${mouse.x * 100}px, -${mouse.y * 100}px)`);
+    });
   }
 }
