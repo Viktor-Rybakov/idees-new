@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: service;
 
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
@@ -27,6 +28,7 @@
   grid-template-columns: 1fr;
   padding-bottom: 50px;
   border-bottom: 1px solid var(--border-color);
+  counter-increment: service;
 
   @media (min-width: 1480px) {
     grid-template-columns: 1fr 180px;
@@ -79,6 +81,7 @@
     color: var(--light-grey);
     font-size: 20px;
     line-height: 26px;
+    content: counter(service, decimal-leading-zero) " ";
   }
 
   &::after {
@@ -88,10 +91,6 @@
   }
 
   &--strategy {
-    &::before {
-      content: "01";
-    }
-
     &::after {
       @media (min-width: 1480px) {
         background-image: url("/img/strategy.svg");
@@ -100,10 +99,6 @@
   }
 
   &--branding {
-    &::before {
-      content: "02";
-    }
-
     &::after {
       @media (min-width: 1480px) {
         background-image: url("/img/branding.svg");
@@ -112,10 +107,6 @@
   }
 
   &--develop {
-    &::before {
-      content: "03";
-    }
-
     &::after {
       @media (min-width: 1480px) {
         background-image: url("/img/develop.svg");
@@ -124,10 +115,6 @@
   }
 
   &--design {
-    &::before {
-      content: "04";
-    }
-
     &::after {
       @media (min-width: 1480px) {
         background-image: url("/img/design.svg");

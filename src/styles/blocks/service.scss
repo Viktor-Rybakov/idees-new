@@ -14,6 +14,7 @@
     align-items: flex-start;
     padding-top: 48px;
     padding-bottom: 48px;
+    counter-increment: service;
   }
 
   &::before {
@@ -22,6 +23,7 @@
     margin-bottom: 24px;
     font-size: 20px;
     line-height: 26px;
+    content: counter(service, decimal-leading-zero) " ";
 
     @media (min-width: 860px) {
       margin-right: 75px;
@@ -47,42 +49,25 @@
     }
   }
 
-
   &--strategy {
-    &::before {
-      content: "01";
-    }
-
     &::after {
       background-image: url("/img/strategy.svg");
     }
   }
 
   &--branding {
-    &::before {
-      content: "02";
-    }
-
     &::after {
       background-image: url("/img/branding.svg");
     }
   }
 
   &--develop {
-    &::before {
-      content: "03";
-    }
-
     &::after {
       background-image: url("/img/develop.svg");
     }
   }
 
   &--design {
-    &::before {
-      content: "04";
-    }
-
     &::after {
       background-image: url("/img/design.svg");
     }

@@ -123,11 +123,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: stages;
 }
 
 .service-page__stage {
   padding-top: 48px;
   padding-bottom: 50px;
+  counter-increment: stages;
 
   &:not(:last-of-type) {
     border-bottom: 1px solid var(--border-color);
@@ -138,26 +140,11 @@
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 24px;
+    content: counter(stages, decimal-leading-zero) " ";
 
     @media (min-width: 800px) {
       color: var(--light-grey);
     }
-  }
-
-  &:nth-child(1)::before {
-    content: "01";
-  }
-
-  &:nth-child(2)::before {
-    content: "02";
-  }
-
-  &:nth-child(3)::before {
-    content: "03";
-  }
-
-  &:nth-child(4)::before {
-    content: "04";
   }
 }
 
@@ -302,6 +289,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: develop-stages;
 
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
@@ -317,6 +305,7 @@
   grid-template-rows: max-content 1fr;
   grid-template-columns: max-content 1fr;
   gap: 16px 40px;
+  counter-increment: develop-stages;
 
   &::before {
     display: block;
@@ -324,30 +313,7 @@
     color: var(--light-grey);
     font-size: 18px;
     line-height: 24px;
-  }
-
-  &:nth-child(1)::before {
-    content: "01";
-  }
-
-  &:nth-child(2)::before {
-    content: "02";
-  }
-
-  &:nth-child(3)::before {
-    content: "03";
-  }
-
-  &:nth-child(4)::before {
-    content: "04";
-  }
-
-  &:nth-child(5)::before {
-    content: "05";
-  }
-
-  &:nth-child(6)::before {
-    content: "06";
+    content: counter(develop-stages, decimal-leading-zero) " ";
   }
 }
 
@@ -381,6 +347,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: team;
 
   @media (min-width: 960px) {
     grid-template-columns: 1fr 1fr;
@@ -395,6 +362,7 @@
   font-size: 20px;
   line-height: 26px;
   border-top: 1px solid var(--border-color);
+  counter-increment: team;
 
   @media (min-width: 860px) {
     padding-top: 48px;
@@ -430,45 +398,10 @@
     color: var(--light-grey);
     font-size: 18px;
     line-height: 24px;
+    content: counter(team, decimal-leading-zero) " ";
 
     @media (min-width: 860px) {
       margin-right: 112px;
     }
-  }
-
-  &:nth-child(1)::before {
-    content: "01";
-  }
-
-  &:nth-child(2)::before {
-    content: "02";
-  }
-
-  &:nth-child(3)::before {
-    content: "03";
-  }
-
-  &:nth-child(4)::before {
-    content: "04";
-  }
-
-  &:nth-child(5)::before {
-    content: "05";
-  }
-
-  &:nth-child(6)::before {
-    content: "06";
-  }
-
-  &:nth-child(7)::before {
-    content: "07";
-  }
-
-  &:nth-child(8)::before {
-    content: "08";
-  }
-
-  &:nth-child(9)::before {
-    content: "09";
   }
 }
