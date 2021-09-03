@@ -4,7 +4,6 @@ import setFormValidation from './form-validation.js';
 import setModal from './modal.js';
 import setProjectsList from './projecsts.js';
 import setScrollTop from './scroll-top.js';
-import setFullHeight from './full-height.js';
 import setAnimation from './animation.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setFormValidation();
   setProjectsList();
   setScrollTop();
-  setFullHeight();
   setAnimation();
 });
