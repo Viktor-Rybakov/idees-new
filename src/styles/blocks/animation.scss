@@ -4,15 +4,16 @@
 
 .animation-elem {
   position: absolute;
-  top: var(--position-y, 50%);
-  left: var(--position-x, 50%);
+  top: var(--mouse-y, 50%);
+  left: var(--mouse-x, 50%);
   z-index: -1;
-  width: 610px;
+  width: 760px;
   height: 460px;
   background-image: url("/img/contour.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  transition: 0.5s;
+  background-size: 110%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
   pointer-events: none;
 }
