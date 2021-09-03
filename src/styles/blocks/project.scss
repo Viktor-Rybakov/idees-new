@@ -227,6 +227,33 @@
   }
 }
 
+.project__content-video {
+  width: 100%;
+  height: 100%;
+  border: none;
+
+  @supports not (aspect-ratio: 16 / 9) {
+    height: auto;
+  }
+}
+
+.project__content-video-container {
+  @media (min-width: 1200px) {
+    grid-column: 2 / span 1;
+  }
+
+  aspect-ratio: 16 / 9;
+
+  @supports not (aspect-ratio: 16 / 9) {
+    display: flex;
+
+    &::before {
+      content: "";
+      padding-bottom: calc(100% / (16 / 9));
+    }
+  }
+}
+
 .project__feedback {
   padding-bottom: 40px;
   border-bottom: 1px solid var(--border-color);
