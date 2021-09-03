@@ -12,15 +12,9 @@
 
 .feedback-section__title-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 32px;
-
-  @media (min-width: 560px) {
-    flex-direction: row;
-    align-items: center;
-  }
 
   @media (min-width: 860px) {
     margin-bottom: 70px;
@@ -29,14 +23,9 @@
 
 .feedback-section__title {
   margin: 0;
-  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-
-  @media (min-width: 560px) {
-    margin-bottom: 0;
-  }
 
   @media (min-width: 860px) {
     font-size: 50px;

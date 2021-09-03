@@ -15,3 +15,7 @@ img-comparison-slider.rendered {
 img-comparison-slider.rendered [slot='second'] {
   display: unset;
 }
+
+img-comparison-slider:focus-visible {
+  outline: none;
+}

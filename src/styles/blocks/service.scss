@@ -7,6 +7,7 @@
   justify-content: flex-start;
   padding-top: 32px;
   padding-bottom: 32px;
+  counter-increment: service;
 
   @media (min-width: 860px) {
     flex-direction: row;
@@ -14,7 +15,6 @@
     align-items: flex-start;
     padding-top: 48px;
     padding-bottom: 48px;
-    counter-increment: service;
   }
 
   &::before {
@@ -111,31 +111,25 @@
 }
 
 .service__link {
-  display: none;
-
-  @media (min-width: 860px) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--yellow);
-    font-size: 30px;
-    background-color: var(--dark-grey);
-    opacity: 0;
-    transition: 0.2s;
-    user-select: none;
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow);
+  font-size: 30px;
+  background-color: var(--dark-grey);
+  opacity: 0;
+  transition: 0.2s;
+  user-select: none;
 }
 
 .service:hover {
-  @media (min-width: 860px) {
-    .service__link {
-      opacity: 1;
-      user-select: auto;
-    }
+  .service__link {
+    opacity: 1;
+    user-select: auto;
   }
 }
