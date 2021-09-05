@@ -2,6 +2,7 @@
 
 img-comparison-slider {
   visibility: hidden;
+  outline-style: none;
 }
 
 img-comparison-slider [slot='second'] {
@@ -16,6 +17,9 @@ img-comparison-slider.rendered [slot='second'] {
   display: unset;
 }
 
+img-comparison-slider,
+img-comparison-slider:active,
+img-comparison-slider:focus,
 img-comparison-slider:focus-visible {
   outline: none;
 }
