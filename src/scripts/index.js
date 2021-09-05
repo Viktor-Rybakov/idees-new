@@ -16,4 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setProjectsList();
   setScrollTop();
   setAnimation();
+
+  const scene = document.getElementById('scene');
+
+  if (scene) {
+    const parallaxInstance = new Parallax(scene);
+  }
 });

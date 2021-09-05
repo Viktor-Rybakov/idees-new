@@ -1,6 +1,7 @@
 /* main-section */
 
 .main-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,6 +19,33 @@
 
   @media (min-width: 1400px) {
     padding-bottom: 175px;
+  }
+}
+
+.main-section__scene {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.main-section__scene-img {
+  position: absolute !important;
+  top: var(--position-y, 50%) !important;
+  left: var(--position-x, 50%) !important;
+  display: block;
+  width: 305px;
+  height: 230px;
+  will-change: transform;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  @media (min-width: 1200px) {
+    width: 500px;
+    height: 380px;
   }
 }
 
