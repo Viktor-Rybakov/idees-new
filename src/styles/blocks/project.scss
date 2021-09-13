@@ -238,6 +238,9 @@
 }
 
 .project__content-video-container {
+  width: 100%;
+  min-width: 0;
+
   @media (min-width: 1200px) {
     grid-column: 2 / span 1;
   }
