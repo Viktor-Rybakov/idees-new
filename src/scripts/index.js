@@ -5,6 +5,8 @@ import setModal from './modal.js';
 import setProjectsList from './projecsts.js';
 import setScrollTop from './scroll-top.js';
 import setAnimation from './animation.js';
+import setPopupImages from './popup-image.js';
+import {setCollapseElements} from './collapse.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   setModal('.modal', '.form-section', '.js-form-open', '.js-form-close');
@@ -16,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
   setProjectsList();
   setScrollTop();
   setAnimation();
+  setPopupImages();
+  setCollapseElements('.collapse-item__title-wrapper', '.collapse-item', '.collapse-item__button', '.collapse-item__container');
+
 
   const scene = document.getElementById('scene');
 

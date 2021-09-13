@@ -1,0 +1,38 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup__image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.popup__button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url("/img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-image {
+  @media (min-width: 1200px) {
+    cursor: pointer;
+  }
+}
