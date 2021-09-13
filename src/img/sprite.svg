@@ -48,4 +48,8 @@
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.5 17.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 000-.32M11.5 11.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 100-.32M16.5 20.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 100-.32M14.5 15.34a.16.16 0 00-.16.16c0 .09.07.16.16.16a.16.16 0 000-.32"/>
     <path stroke-linecap="round" stroke-linejoin="round" clip-rule="evenodd" stroke-width="2" d="M15 4a11 11 0 0011 11A11 11 0 1115 4z"/>
   </symbol>
+
+  <symbol id="cross" viewBox="0 0 16 16" fill="none">
+    <path fill="#262626" fill-rule="evenodd" d="M8.8 0H7.2v7.2H0v1.6h7.2V16h1.6V8.8H16V7.2H8.8V0Z" clip-rule="evenodd"/>
+  </symbol>
 </svg>
