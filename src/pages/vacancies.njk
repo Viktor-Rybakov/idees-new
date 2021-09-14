@@ -1,0 +1,138 @@
+---
+layout: page.njk
+permalink: vacancies.html
+---
+
+<section class="vacancies container">
+  <div class="vacancies__title-container">
+    <h1 class="page__title">Станьте частью нашей команды</h1>
+
+    <ul class="vacancies__tags tags">
+      <li class="tags__item">
+        <button class="tag tag--active" type="button">Все вакансии</button>
+      </li>
+      <li class="tags__item">
+        <button class="tag" type="button">Продукт</button>
+      </li>
+      <li class="tags__item">
+        <button class="tag" type="button">Брендинг</button>
+      </li>
+      <li class="tags__item">
+        <button class="tag" type="button">Стратегия</button>
+      </li>
+      <li class="tags__item">
+        <button class="tag" type="button">Разработка</button>
+      </li>
+      <li class="tags__item">
+        <button class="tag" type="button">Дизайн</button>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="vacancies__list">
+    <li class="vacancies__item">
+      <a class="vacancies__link" href="/vacancy.html" >
+        <span class="vacancies__name">Менеджер проектов</span>
+        <span class="vacancies__descr">
+          <span>Сергиев Посад / Удаленка</span>
+          <span>от 60 000 ₽</span>
+        </span>
+      </a>
+    </li>
+    <li class="vacancies__item">
+      <a class="vacancies__link" href="/vacancy.html" >
+        <span class="vacancies__name">Дизайнер айдентики</span>
+        <span class="vacancies__descr">
+          <span>Москва / Удаленка</span>
+          <span>от 70 000 ₽</span>
+        </span>
+      </a>
+    </li>
+    <li class="vacancies__item">
+      <a class="vacancies__link" href="/vacancy.html" >
+        <span class="vacancies__name">Дизайнер интерфейсов</span>
+        <span class="vacancies__descr">
+          <span>Санкт-Петербург / Удаленка</span>
+          <span>от 100 000 ₽</span>
+        </span>
+      </a>
+    </li>
+    <li class="vacancies__item">
+      <a class="vacancies__link" href="/vacancy.html" >
+        <span class="vacancies__name">Frontend-разработчик (middle)</span>
+        <span class="vacancies__descr">
+          <span>Сергиев Посад / Удаленка</span>
+          <span>от 90 000 ₽</span>
+        </span>
+      </a>
+    </li>
+    <li class="vacancies__item">
+      <a class="vacancies__link" href="/vacancy.html" >
+        <span class="vacancies__name">DevOps-инженер</span>
+        <span class="vacancies__descr">
+          <span>Санкт-Петербург / Удаленка</span>
+          <span>от 120 000 ₽</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="vacancies__form container">
+  <h2 class="vacancies__section-title">Расскажите о себе</h2>
+
+  <form class="form" method="POST" action="https://echo.htmlacademy.ru/">
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-name">имя и фамилия</label>
+      <input class="form__text-field" type="text" id="shrot-form-name" name="shrot-form-name">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-email">email</label>
+      <input class="form__text-field" type="email" id="shrot-form-email" name="shrot-form-email" required
+              autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-phone">телефон</label>
+      <input class="form__text-field" type="tel" id="shrot-form-phone" name="shrot-form-phone" required
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+            autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-addition">дополнительные сведения</label>
+      <input class="form__text-field" type="text" id="shrot-form-addition" name="shrot-form-addition">
+    </div>
+
+    <div class="form__row form__row--bottom form__row--submit">
+      <button class="button" type="submit">
+        <span class="button__icon-wrapper">
+          <svg class="button__icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </span>
+
+        <span class="button__text">отправить заявку</span>
+      </button>
+
+      <input class="visually-hidden" id="short-form-file" type="file" name="short-form-file">
+      <label class="form__file" for="short-form-file">
+        <span class="form__file-icon-wrapper">
+          <svg class="form__file-icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#add-file"></use>
+          </svg>
+        </span>
+
+        <span class="form__file-text">
+          прикрепить файл<br>
+          <small>не более 10mb</small>
+        </span>
+      </label>
+    </div>
+
+    <p class="form__text">
+      Отправляя заявку, я соглашаюсь передать свои персональные данные, содержащиеся в анкете и всех приложенных файлах, исключительно для включения во внешний кадровый резерв, и чтобы компания могла предлагать мне вакансии. Я понимаю и соглашаюсь, что мои данные будут храниться и обрабатываться в течение пяти лет, в соответствии с Федеральным законом «О персональных данных»
+    </p>
+  </form>
+</section>
