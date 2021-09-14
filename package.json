@@ -4,11 +4,12 @@
   "scripts": {
     "start": "rm -rf dist && npm run watch:eleventy & npm run watch:postcss",
     "test": "npm run test:html && npm run test:styles && npm run test:scripts && npm run test:editorconfig",
-    "build": "rm -rf dist && npm run build:eleventy && npm run build:postcss",
+    "build": "rm -rf dist && npm run build:eleventy && npm run build:postcss && npm run build:scripts",
     "watch:postcss": "npx postcss --watch src/styles/index.scss --use postcss-nested --use postcss-import --output dist/styles/index.css",
     "watch:eleventy": "eleventy --serve --quiet --watch",
     "build:postcss": "npx postcss src/styles/index.scss --use postcss-nested --use postcss-import --use autoprefixer --use postcss-csso --no-map --output dist/styles/index.css",
     "build:eleventy": "eleventy",
+    "build:scripts": "webpack --mode production",
     "test:html": "htmlhint dist/*.html",
     "test:styles": "stylelint \"src/styles/**/*.scss\"",
     "test:scripts": "eslint src/scripts/",
@@ -34,6 +35,8 @@
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.5",
     "stylelint": "^13.13.1",
-    "stylelint-order": "^4.1.0"
+    "stylelint-order": "^4.1.0",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
   }
 }

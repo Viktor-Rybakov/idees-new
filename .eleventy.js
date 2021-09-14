@@ -26,7 +26,7 @@ module.exports = (config) => {
 
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/img');
-  config.addPassthroughCopy('src/scripts');
+  config.addPassthroughCopy('src/scripts/libs');
   config.addPassthroughCopy('src/manifest.webmanifest');
   config.addPassthroughCopy('src/favicon.ico');
 
