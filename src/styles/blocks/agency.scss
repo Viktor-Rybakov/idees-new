@@ -116,13 +116,13 @@
     }
 
     &:nth-child(4n + 2) {
-      margin-right: calc(120px / 8 * 3);
-      padding-left: calc(120px / 8);
+      margin-right: calc(120px / 6);
+      padding-left: calc(120px / 12);
     }
 
     &:nth-child(4n + 3) {
-      margin-left: calc(120px / 8 * 3);
-      padding-right: calc(120px / 8);
+      margin-left: calc(120px / 6);
+      padding-right: calc(120px / 12);
     }
 
     &:nth-child(4n + 4) {
