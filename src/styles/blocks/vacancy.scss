@@ -1,0 +1,155 @@
+.vacancy {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: 860px) {
+    padding-top: 200px;
+  }
+}
+
+.vacancy__form {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media (min-width: 800px) {
+    padding-top: 72px;
+    padding-bottom: 110px;
+  }
+}
+
+.vacancy__section-title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+
+  @media (min-width: 800px) {
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
+
+.vacancy__content {
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+
+    @media (min-width: 800px) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 48px;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 48px;
+    padding-top: 48px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    border-top: 1px solid var(--border-color);
+
+    @media (min-width: 800px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    margin-bottom: 48px;
+    padding-left: 13px;
+    list-style: "-";
+
+    li {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+.vacancy__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 48px;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.vacancy__contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background-color: var(--light);
+
+  @media (min-width: 1200px) {
+    position: sticky;
+    top: 48px;
+    justify-self: end;
+    align-self: start;
+    width: 513px;
+  }
+}
+
+.vacancy__contacts-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+
+  @media (min-width: 800px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.vacancy__contacts-list {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.vacancy__contacts-item {
+  &:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+}
+
+.vacancy__contacts-link {
+  display: flex;
+  color: var(--light-grey);
+  font-size: 18px;
+  line-height: 24px;
+  white-space: nowrap;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--dark-grey);
+  }
+
+  @media (min-width: 800px) {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.vacancy__contacts-button {
+  align-self: flex-start;
+}

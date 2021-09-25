@@ -1,0 +1,140 @@
+---
+layout: page.njk
+permalink: vacancy.html
+---
+
+<div class="vacancy container">
+  <h1 class="page__title">Frontend-разработчик (middle)</h1>
+
+  <div class="vacancy__container">
+    <section class="vacancy__content">
+      <p>Команда дизайна продуктов Айдис ищет опытных старших дизайнеров на В2В-направление, чтобы вместе строить продукты, меняющие рынок продаж в России.
+      </p>
+
+      <p>
+        Как часть команды вы будете отвечать за дизайн новых и существующих брендов на всех этапах, от прорывных идей до отточенных решений.
+      </p>
+
+      <h3>Задачи</h3>
+
+      <ul>
+        <li>проектирование архитектуры веб-продуктов;</li>
+        <li>разработка сайтов и сервисов;</li>
+        <li>развитие и поддержка существующих сайтов и сервисов.</li>
+      </ul>
+
+      <h3>Требования</h3>
+
+      <ul>
+        <li>уверенный опыт верстки HTML5/CSS;</li>
+        <li>Twitter Bootstrap;</li>
+        <li>работа с REST API;</li>
+        <li>JavaScript, ReactJS, Node.js;</li>
+        <li>препроцессоры (Stylus, SASS или LESS);</li>
+        <li>Git;</li>
+        <li>Figma, Adobe Xd, Sketch;</li>
+        <li>опыт в верстке от 3 лет.</li>
+      </ul>
+
+      <h3>Условия</h3>
+
+      <ul>
+        <li>сильная команда, с которой можно расти;</li>
+        <li>гибкий график работы;</li>
+        <li>оплата за работу по договоренности;</li>
+        <li>обязательно подписание соглашения NDA.</li>
+      </ul>
+    </section>
+
+    <aside class="vacancy__contacts">
+      <h2 class="vacancy__contacts-title">Контакты отдела HR:</h2>
+
+      <ul class="vacancy__contacts-list">
+        <li class="vacancy__contacts-item">
+          <a class="vacancy__contacts-link" href="tel:+74951966585">+7 (495) 196-65-85</a>
+        </li>
+        <li class="vacancy__contacts-item">
+          <a class="vacancy__contacts-link" href="email:info@idees.ru">info@idees.ru</a>
+        </li>
+        <li class="vacancy__contacts-item">
+          <a class="vacancy__contacts-link" href="t.me/ideesru">@ideesru</a>
+        </li>
+      </ul>
+
+      <a class="button vacancy__contacts-button" href="#vacancy-form">
+        <span class="button__icon-wrapper">
+          <svg class="button__icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </span>
+
+        <span class="button__text">отправить заявку</span>
+      </a>
+    </aside>
+
+  </div>
+</div>
+
+<section class="vacancy__form container">
+  <h2 class="vacancy__section-title" id="vacancy-form">Откликнуться</h2>
+
+  <form class="form" method="POST" action="https://echo.htmlacademy.ru/">
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-name">имя и фамилия</label>
+      <input class="form__text-field" type="text" id="shrot-form-name" name="shrot-form-name">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-phone">телефон</label>
+      <input class="form__text-field" type="tel" id="shrot-form-phone" name="shrot-form-phone" required
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+            autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-email">email</label>
+      <input class="form__text-field" type="email" id="shrot-form-email" name="shrot-form-email" required
+              autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-github">github</label>
+      <input class="form__text-field" type="text" id="shrot-form-github" name="shrot-form-github">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-addition">дополнительные сведения</label>
+      <input class="form__text-field" type="text" id="shrot-form-addition" name="shrot-form-addition">
+    </div>
+
+    <div class="form__row form__row--bottom form__row--submit">
+      <button class="button" type="submit">
+        <span class="button__icon-wrapper">
+          <svg class="button__icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </span>
+
+        <span class="button__text">отправить заявку</span>
+      </button>
+
+      <input class="visually-hidden" id="short-form-file" type="file" name="short-form-file">
+      <label class="form__file" for="short-form-file">
+        <span class="form__file-icon-wrapper">
+          <svg class="form__file-icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#add-file"></use>
+          </svg>
+        </span>
+
+        <span class="form__file-text">
+          прикрепить файл<br>
+          <small>не более 10mb</small>
+        </span>
+      </label>
+    </div>
+
+    <p class="form__text">
+      Отправляя заявку, я соглашаюсь передать свои персональные данные, содержащиеся в анкете и всех приложенных файлах, исключительно для включения во внешний кадровый резерв, и чтобы компания могла предлагать мне вакансии. Я понимаю и соглашаюсь, что мои данные будут храниться и обрабатываться в течение пяти лет, в соответствии с Федеральным законом «О персональных данных»
+    </p>
+  </form>
+</section>
