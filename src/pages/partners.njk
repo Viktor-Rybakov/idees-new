@@ -1,0 +1,134 @@
+---
+layout: page.njk
+permalink: partners.html
+---
+
+<section class="partners__top-section">
+  <h1 class="page__title container">Приведи клиента и получи деньги</h1>
+
+  <div class="partners__top-section-container container">
+    <p class="partners__description">Ваше вознаграждение составляет 20% от суммы первой сделки и 10% со всех последующих сделок этого клиента в течение одного года*</p>
+
+    <p class="partners__addition-description">* с момента нашего заключения договора с клиентом и оплаты счета за услуги</p>
+  </div>
+
+  <div class="partners__section partners__section--grey">
+    <div class="partners__section-grey-container container">
+      <dl class="parners__bonus-list">
+        <dt class="partners__bonus-name">с первой сделки</dt>
+        <dd class="partners__bonus-value">20%</dd>
+
+        <dt class="partners__bonus-name">со всех последующих</dt>
+        <dd class="partners__bonus-value">10%</dd>
+      </dl>
+
+      <div class="partners__grey-description-container">
+        <p class="partners__grey-description">
+          Айдис предлагает взаимовыгодные условия партнерства по интернет-маркетингу, которые принесут дополнительный доход без вложений. Вы рекомендуете нас, как надежного партнера в сфере маркетинга своим клиентам (партнерам, друзьям) и получаете за это процент от заказов, сделанных благодаря Вам.
+        </p>
+        <p class="partners__grey-description">
+          За каждый проект выплачивается комиссия, которая зависит от вида и стоимости выполняемых работ. За привлечение Клиента мы выплачиваем комиссию в 20% единоразово и 10% со всех последующих обращений клиента, который пришел от вас.
+        </p>
+      </div>
+
+      <a class="button partners__link" href="#partners-form">
+        <span class="button__icon-wrapper">
+          <svg class="button__icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </span>
+
+        <span class="button__text">начать сотрудничество</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="partners__section container">
+  <h2 class="partners__section-title">
+    Порядок работы
+  </h2>
+
+  <ul class="partners__work-list">
+    <li class="partners__work-item">
+      <h3 class="partners__work-title">Заключаем договор</h3>
+      <p class="partners__work-description">Заключается Агентский Договор, в котором определяется размер вознаграждения, порядок выплат, порядок работы.</p>
+    </li>
+    <li class="partners__work-item">
+      <h3 class="partners__work-title">Закрепляем менеджера</h3>
+      <p class="partners__work-description">За Вами закрепляется конкретный менеджер отдела продаж, которому передается информация о Ваших клиентах, заинтересованных нашими услугами. Этот менеджер ведет учет всех клиентов, поступивших от Вас, а также учет партнерских процентов.</p>
+    </li>
+    <li class="partners__work-item">
+      <h3 class="partners__work-title">Менеджер информирует Вас</h3>
+      <p class="partners__work-description">При заключении Договора с кем-либо из ваших клиентов, менеджер, закрепленный за вами, сообщает вам об этом.</p>
+    </li>
+    <li class="partners__work-item">
+      <h3 class="partners__work-title">Получаете средства</h3>
+      <p class="partners__work-description">Мы производим начисление Ваших партнерских процентов.</p>
+    </li>
+  </ul>
+</section>
+
+<section class="partners__form container">
+  <h2 class="partners__section-title" id="partners-form">Начать проект</h2>
+
+  <form class="form" method="POST" action="https://echo.htmlacademy.ru/">
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-name">имя и фамилия</label>
+      <input class="form__text-field" type="text" id="shrot-form-name" name="shrot-form-name">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-company">компания</label>
+      <input class="form__text-field" type="text" id="shrot-form-company" name="shrot-form-company">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-email">email</label>
+      <input class="form__text-field" type="email" id="shrot-form-email" name="shrot-form-email" required
+              autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-phone">телефон</label>
+      <input class="form__text-field" type="tel" id="shrot-form-phone" name="shrot-form-phone" required
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+            autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-task">описание задачи</label>
+      <input class="form__text-field" type="text" id="shrot-form-task" name="shrot-form-task">
+    </div>
+
+    <div class="form__row form__row--bottom form__row--submit">
+      <button class="button" type="submit">
+        <span class="button__icon-wrapper">
+          <svg class="button__icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </span>
+
+        <span class="button__text">отправить заявку</span>
+      </button>
+
+      <input class="visually-hidden" id="short-form-file" type="file" name="short-form-file">
+      <label class="form__file" for="short-form-file">
+        <span class="form__file-icon-wrapper">
+          <svg class="form__file-icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#add-file"></use>
+          </svg>
+        </span>
+
+        <span class="form__file-text">
+          прикрепить файл<br>
+          <small>не более 10mb</small>
+        </span>
+      </label>
+    </div>
+
+    <p class="form__text">
+      Отправляя заявку, я соглашаюсь передать свои персональные данные, содержащиеся в анкете и всех приложенных файлах. Я понимаю и соглашаюсь, что мои данные будут храниться и обрабатываться в течение пяти лет, в соответствии с Федеральным законом «О персональных данных».
+    </p>
+  </form>
+</section>
