@@ -1,0 +1,174 @@
+---
+layout: page.njk
+permalink: products.html
+---
+
+<section class="products__top-section container">
+  <h1 class="products__title">Yonger</h1>
+
+  <div class="products__descrition-wrapper">
+    <p class="products__description">
+      Мы разрабатываем Yonger и вкладывааем в него все свои знания последние 9 лет, поэтому можем дать гарантию на продукты, построенные на этой платформе — 12 месяцев.
+    </p>
+
+    <p class="products__description">
+      Open-source платформа нашей собственной разработки, на которой можно построить все что угодно
+    </p>
+
+    <a class="button products__link" href="http://yonger.ru/" target="_blank">
+      <span class="button__icon-wrapper">
+        <svg class="button__icon" width="24" height="24">
+          <use xlink:href="/img/sprite.svg#arrow-right"></use>
+        </svg>
+      </span>
+
+      <span class="button__text">перейти на yonger.ru</span>
+    </a>
+  </div>
+
+  <img class="products__image" width="1620" height="745"
+      src="/img/yonger@1x.jpg"
+      srcset="/img/yonger@2x.jpg 2x"
+      alt="Проект Yonger">
+</section>
+
+
+<section class="products__section container">
+  <h2 class="products__section-title">
+    Преимущества
+  </h2>
+
+  <ul class="products__advantage-list">
+    <li class="products__advantage-item">
+      Год гарантийного обслуживания и поддержки
+    </li>
+    <li class="products__advantage-item">
+      Возможности, надежность
+      и обслуживание как
+      у коммерческих CMS, но для вас она ничего не стоит
+    </li>
+    <li class="products__advantage-item">
+      Безопасность на уровне выше большинства open-source CMS
+    </li>
+    <li class="products__advantage-item">
+      Возможность бесконечной эксклюзивной доработки для ваших нужд
+    </li>
+    <li class="products__advantage-item">
+      Мультисайтовость (много доменов и сайтов, панель одна)
+    </li>
+    <li class="products__advantage-item">
+      Устойчивость к нагрузкам и легковестность
+    </li>
+    <li class="products__advantage-item">
+      Удобство работы контент-менеджера
+    </li>
+    <li class="products__advantage-item">
+      Высокая производительность
+    </li>
+    <li class="products__advantage-item">
+      SEO подготовка «из коробки»
+    </li>
+  </ul>
+</section>
+
+<section class="products__section container">
+  <h2 class="products__section-title">
+    Построили на Yonger и гордимся этим
+  </h2>
+
+  <ul class="products__similar-list">
+    <li class="products__similar-item">
+      <article class="case">
+        <a class="case__title-link-wrapper" href="/project.html">
+          <h3 class="case__title">ILM Group</h3>
+          <p class="case__description">Обновили логотип и фирменный стиль бренда. Создали необходимые носители</p>
+        </a>
+        <a class="case__image-wrapper" href="/project.html">
+          <img class="case__image" width="790" height="500"
+              src="/img/ilm-group@1x.jpg"
+              srcset="/img/ilm-group@2x.jpg 2x"
+              alt="Проект компании ILM Group">
+        </a>
+      </article>
+    </li>
+
+    <li class="products__similar-item">
+      <article class="case">
+        <a class="case__title-link-wrapper" href="/project.html">
+          <h3 class="case__title">Мосдерм</h3>
+          <p class="case__description">Обновление айдентики компании. Новый логотип, фирменный стиль, веб-сайт</p>
+        </a>
+        <a class="case__image-wrapper" href="/project.html">
+          <img class="case__image" width="790" height="500"
+              src="/img/mosderm@1x.jpg"
+              srcset="/img/mosderm@2x.jpg 2x"
+              alt="Проект компании ILM Group">
+        </a>
+      </article>
+    </li>
+  </ul>
+</section>
+
+<section class="products__form container">
+  <h2 class="products__section-title">Начать проект</h2>
+
+  <form class="form" method="POST" action="https://echo.htmlacademy.ru/">
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-name">имя и фамилия</label>
+      <input class="form__text-field" type="text" id="shrot-form-name" name="shrot-form-name">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-company">компания</label>
+      <input class="form__text-field" type="text" id="shrot-form-company" name="shrot-form-company">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-email">email</label>
+      <input class="form__text-field" type="email" id="shrot-form-email" name="shrot-form-email" required
+              autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-phone">телефон</label>
+      <input class="form__text-field" type="tel" id="shrot-form-phone" name="shrot-form-phone" required
+            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+            autocomplete="on">
+    </div>
+
+    <div class="form__field-wrapper">
+      <label class="form__text-field-label" for="shrot-form-task">описание задачи</label>
+      <input class="form__text-field" type="text" id="shrot-form-task" name="shrot-form-task">
+    </div>
+
+    <div class="form__row form__row--bottom form__row--submit">
+      <button class="button" type="submit">
+        <span class="button__icon-wrapper">
+          <svg class="button__icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </span>
+
+        <span class="button__text">отправить заявку</span>
+      </button>
+
+      <input class="visually-hidden" id="short-form-file" type="file" name="short-form-file">
+      <label class="form__file" for="short-form-file">
+        <span class="form__file-icon-wrapper">
+          <svg class="form__file-icon" width="24" height="24">
+            <use xlink:href="/img/sprite.svg#add-file"></use>
+          </svg>
+        </span>
+
+        <span class="form__file-text">
+          прикрепить файл<br>
+          <small>не более 10mb</small>
+        </span>
+      </label>
+    </div>
+
+    <p class="form__text">
+      Отправляя заявку, я соглашаюсь передать свои персональные данные, содержащиеся в анкете и всех приложенных файлах. Я понимаю и соглашаюсь, что мои данные будут храниться и обрабатываться в течение пяти лет, в соответствии с Федеральным законом «О персональных данных».
+    </p>
+  </form>
+</section>

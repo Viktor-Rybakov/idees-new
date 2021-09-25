@@ -60,11 +60,9 @@
   display: block;
   grid-area: title;
   margin-top: 24px;
-  margin-bottom: 32px;
 
   @media (min-width: 860px) {
     margin-top: 40px;
-    margin-bottom: 0;
   }
 }
 
@@ -87,8 +85,10 @@
   grid-area: link;
   justify-self: flex-start;
   align-self: flex-end;
+  margin-top: 32px;
 
   @media (min-width: 860px) {
+    margin-top: 0;
     margin-bottom: 40px;
   }
 }
@@ -98,7 +98,8 @@
 }
 
 .cases-section__list--blocks,
-.project__similar-list {
+.project__similar-list,
+.products__similar-list {
   @media (min-width: 860px) {
     .case {
       display: grid;
@@ -113,23 +114,21 @@
       line-height: 26px;
     }
 
-    .case__title-link-wrapper {
-      margin-bottom: 64px;
-    }
-
     .case__image {
       width: 100%;
       height: 400px;
     }
 
     .case__link {
+      margin-top: 64px;
       margin-bottom: 0;
     }
   }
 }
 
 .cases-section__list--without-top-borders,
-.project__similar-list {
+.project__similar-list,
+.products__similar-list {
   .case__description {
     margin-bottom: 0;
   }
