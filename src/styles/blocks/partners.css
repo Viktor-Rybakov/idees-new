@@ -21,20 +21,6 @@
   }
 }
 
-.partners__section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  @media (min-width: 1200px) {
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
-
-  &--grey {
-    background-color: var(--light);
-  }
-}
-
 .partners__form {
   padding-top: 30px;
   padding-bottom: 60px;

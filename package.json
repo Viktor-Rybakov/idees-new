@@ -12,7 +12,7 @@
     "build:eleventy": "eleventy",
     "build:rollup": "npx rollup -i src/scripts/index.js -o dist/scripts/index.js",
     "test:html": "htmlhint dist/*.html",
-    "test:styles": "stylelint \"src/styles/**/*.scss\"",
+    "test:styles": "stylelint \"src/styles/**/*.css\"",
     "test:scripts": "eslint src/scripts/",
     "test:editorconfig": "editorconfig-checker"
   },

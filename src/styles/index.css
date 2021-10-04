@@ -1,0 +1,60 @@
+/* Global */
+
+@import "normalize.css";
+@import "global.css";
+@import "fonts.css";
+@import "variables.css";
+@import "visually-hidden.css";
+
+/* Libs */
+
+@import "libs/img-comparison-slider.css";
+
+/* Blocks */
+
+@import "blocks/container.css";
+@import "blocks/page.css";
+@import "blocks/header.css";
+@import "blocks/footer.css";
+@import "blocks/button.css";
+@import "blocks/document.css";
+@import "blocks/cookies-block.css";
+@import "blocks/404.css";
+@import "blocks/map.css";
+@import "blocks/mailing-block.css";
+@import "blocks/form-section.css";
+@import "blocks/form.css";
+@import "blocks/modal.css";
+@import "blocks/menu.css";
+@import "blocks/main-section.css";
+@import "blocks/cases-section.css";
+@import "blocks/case.css";
+@import "blocks/services-section.css";
+@import "blocks/service.css";
+@import "blocks/feedback-section.css";
+@import "blocks/feedback.css";
+@import "blocks/tags.css";
+@import "blocks/tag.css";
+@import "blocks/projects.css";
+@import "blocks/up-button.css";
+@import "blocks/project.css";
+@import "blocks/contacts.css";
+@import "blocks/services.css";
+@import "blocks/service-page.css";
+@import "blocks/feedback-page.css";
+@import "blocks/article.css";
+@import "blocks/article-page.css";
+@import "blocks/blog.css";
+@import "blocks/popup.css";
+@import "blocks/glosario.css";
+@import "blocks/collapse-item.css";
+@import "blocks/documents.css";
+@import "blocks/vacancies.css";
+@import "blocks/agency.css";
+@import "blocks/video-section.css";
+@import "blocks/products.css";
+@import "blocks/brand.css";
+@import "blocks/vacancy.css";
+@import "blocks/partners.css";
+@import "blocks/category.css";
+@import "blocks/special.css";

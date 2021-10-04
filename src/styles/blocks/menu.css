@@ -46,7 +46,7 @@
   @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: column;
-    gap: 20px 40px;
+    gap: 51px 40px;
   }
 }
 
@@ -65,6 +65,12 @@
     }
   }
 
+  &--documents {
+    @media (min-width: 600px) {
+      grid-column: 1 / span 1;
+    }
+  }
+
   &--vacancies {
     @media (min-width: 600px) {
       grid-column: 1 / span 1;
@@ -73,7 +79,6 @@
 
   &--contacts {
     @media (min-width: 600px) {
-      grid-row: span 2;
       grid-column: 1 / span 1;
     }
   }

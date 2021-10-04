@@ -192,13 +192,8 @@
   line-height: 24px;
 }
 
-.brand__full-section {
-  padding-top: 50px;
-  background-color: var(--light);
-
-  @media (min-width: 800px) {
-    padding-top: 160px;
-  }
+.brand__grey-section {
+  padding-bottom: 0;
 }
 
 .brand__full-section-text {
@@ -270,7 +265,6 @@
 
   @media (min-width: 860px) {
     width: auto;
-    margin-left: -10px;
     overflow: initial;
   }
 }
@@ -283,7 +277,6 @@
   @media (min-width: 860px) {
     width: calc((100% - 120px) / 4);
     margin-right: 40px;
-    padding: 10px;
   }
 
   &:not(.brand__slider-item-active) {
