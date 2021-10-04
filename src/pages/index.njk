@@ -6,7 +6,7 @@ permalink: index.html
 <section class="main-section animation-section container">
   <div id="scene" class="main-section__scene">
     <svg class="main-section__scene-img" data-depth="0.3" xmlns="http://www.w3.org/2000/svg" width="730" height="530" fill="none" viewBox="0 0 730 530" fill="none">
-      <g filter="url(#filter0_f)">
+      <g filter="url(#filter)">
         <path fill="#FFFE4C" d="M282.5 216.26s-108.23-2.9 66.5-89.5c501.1-65.68 71.33 160.22 266 273.95-243.34 83.86-239.67-239.19-375.53 0-122.23-116.6 143.94-125.47-87.46-125.47-131.73 0 130.49-58.98 130.49-58.98Z">
           <animate
             attributeName="d"
@@ -18,10 +18,8 @@ permalink: index.html
         </path>
       </g>
       <defs>
-        <filter id="filter0_f" width="730" height="530" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur result="effect1_foregroundBlur" stdDeviation="40"/>
+        <filter id="filter">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="30"/>
         </filter>
       </defs>
     </svg>
