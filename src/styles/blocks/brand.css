@@ -1,7 +1,7 @@
 .brand__top-section {
   padding-top: 80px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     padding-top: 200px;
   }
 }
@@ -12,7 +12,7 @@
   gap: 50px 40px;
   margin-bottom: 80px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -21,7 +21,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -31,7 +31,7 @@
   padding-top: 30px;
   padding-bottom: 60px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     padding-top: 72px;
     padding-bottom: 110px;
   }
@@ -43,7 +43,7 @@
   font-weight: 500;
   line-height: 36px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     font-size: 50px;
     line-height: 56px;
   }
@@ -54,7 +54,7 @@
   font-size: 18px;
   line-height: 24px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     font-size: 22px;
     line-height: 28px;
   }
@@ -73,7 +73,7 @@
   grid-template-columns: 1fr;
   margin-bottom: 80px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: repeat(12, 1fr);
     gap: 50px 40px;
     margin-bottom: 120px;
@@ -87,14 +87,14 @@
   font-weight: 500;
   line-height: 36px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     margin-bottom: 80px;
     font-size: 50px;
     line-height: 56px;
   }
 
   &--half {
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       grid-column: span 7;
     }
   }
@@ -105,7 +105,7 @@
   font-size: 18px;
   line-height: 24px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-column: span 5;
     font-size: 22px;
     line-height: 28px;
@@ -121,11 +121,11 @@
   list-style: none;
   counter-reset: approach;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 1680px) {
+  @media (width >= 1680px) {
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
   }
@@ -136,7 +136,7 @@
   padding-bottom: 24px;
   counter-increment: approach;
 
-  @media (min-width: 1680px) {
+  @media (width >= 1680px) {
     border-bottom: 1px solid var(--border-color);
 
     &:nth-child(4n + 1) {
@@ -166,7 +166,7 @@
     line-height: 24px;
     content: counter(approach, decimal-leading-zero) " ";
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       color: var(--light-grey);
     }
   }
@@ -179,7 +179,7 @@
   font-weight: 500;
   line-height: 28px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     font-size: 30px;
     line-height: 36px;
   }
@@ -204,13 +204,13 @@
   font-weight: 500;
   line-height: 36px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     padding-bottom: 160px;
     font-size: 50px;
     line-height: 56px;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     font-size: 70px;
     line-height: 76px;
   }
@@ -222,7 +222,7 @@
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     flex-direction: row;
     align-items: center;
   }
@@ -234,7 +234,7 @@
   flex-basis: 50%;
   min-height: 80px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     min-height: 120px;
   }
 
@@ -246,7 +246,7 @@
 
 
 .brand__slider-container {
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     width: 100%;
     overflow: hidden;
   }
@@ -263,7 +263,7 @@
   list-style: none;
   counter-reset: slider;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     width: auto;
     overflow: initial;
   }
@@ -274,13 +274,13 @@
   width: 100%;
   counter-increment: slider;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     width: calc((100% - 120px) / 4);
     margin-right: 40px;
   }
 
   &:not(.brand__slider-item-active) {
-    @media (min-width: 860px) {
+    @media (width >= 860px) {
       opacity: 0.3;
       filter: blur(4px);
     }
@@ -293,7 +293,7 @@
     line-height: 24px;
     content: counter(slider, decimal-leading-zero) " ";
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       color: var(--light-grey);
     }
   }

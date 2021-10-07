@@ -4,7 +4,7 @@
   padding-top: 60px;
   padding-bottom: 50px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding-top: 180px;
     padding-bottom: 100px;
   }
@@ -12,12 +12,12 @@
 
 .map__wrapper {
 
-  @media (min-width: 640px) {
+  @media (width >= 640px) {
     column-count: 2;
     column-gap: 80px;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     column-count: 3;
     column-gap: 180px;
   }
@@ -30,7 +30,7 @@
     padding-bottom: 16px;
     border-bottom: 1px solid var(--border-color);
 
-    @media (min-width: 768px) {
+    @media (width >= 768px) {
       margin-bottom: 32px;
       padding-bottom: 32px;
     }
@@ -44,7 +44,7 @@
   font-weight: 500;
   line-height: 26px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 36px;
@@ -58,7 +58,7 @@
   line-height: 20px;
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     font-size: 18px;
     line-height: 24px;
   }

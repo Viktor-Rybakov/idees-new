@@ -2,7 +2,7 @@
   padding-top: 80px;
   padding-bottom: 80px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     padding-top: 160px;
     padding-bottom: 160px;
   }
@@ -15,7 +15,7 @@
     padding-top: 50px;
     padding-bottom: 40px;
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       padding-top: 200px;
       padding-bottom: 109px;
     }
@@ -25,7 +25,7 @@
     order: 1;
     padding: 0;
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       order: unset;
     }
   }
@@ -42,7 +42,7 @@
   font-weight: 500;
   line-height: 36px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     font-size: 50px;
     line-height: 56px;
   }
@@ -50,7 +50,7 @@
 
 .service-page__title-container {
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     position: relative;
     padding-right: 435px;
     padding-bottom: 50px;
@@ -58,7 +58,7 @@
   }
 
   &::after {
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       position: absolute;
       top: 0;
       right: 75px;
@@ -72,25 +72,25 @@
   }
 
   &--develop::after {
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       background-image: url("/img/develop.svg");
     }
   }
 
   &--branding::after {
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       background-image: url("/img/branding.svg");
     }
   }
 
   &--design::after {
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       background-image: url("/img/design.svg");
     }
   }
 
   &--strategy::after {
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       background-image: url("/img/strategy.svg");
     }
   }
@@ -103,7 +103,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     font-size: 22px;
     line-height: 28px;
   }
@@ -114,7 +114,7 @@
   grid-template-columns: 1fr;
   column-gap: 250px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-template-columns: 1fr 512px;
   }
 }
@@ -142,7 +142,7 @@
     line-height: 24px;
     content: counter(stages, decimal-leading-zero) " ";
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       color: var(--light-grey);
     }
   }
@@ -155,7 +155,7 @@
   font-weight: 500;
   line-height: 26px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     font-size: 30px;
     line-height: 36px;
   }
@@ -167,7 +167,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     font-size: 18px;
     line-height: 24px;
   }
@@ -184,7 +184,7 @@
   font-weight: 500;
   line-height: 26px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     font-size: 30px;
     line-height: 36px;
   }
@@ -199,7 +199,7 @@
     padding: 32px 40px;
     background-color: var(--light);
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       margin-right: 0;
       margin-left: 0;
     }
@@ -213,11 +213,11 @@
   margin: 0;
   margin-bottom: 36px;
 
-  @media (min-width: 500px) {
+  @media (width >= 500px) {
     grid-template-columns: 200px 1fr;
   }
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: 1fr;
   }
 }
@@ -227,7 +227,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     font-size: 18px;
     line-height: 24px;
   }
@@ -238,7 +238,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     font-size: 22px;
     line-height: 28px;
   }
@@ -255,7 +255,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     font-size: 18px;
     line-height: 24px;
   }
@@ -274,7 +274,7 @@
   line-height: 18px;
   background-color: var(--light);
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     margin-right: 0;
     margin-left: 0;
     font-size: 14px;
@@ -291,11 +291,11 @@
   list-style: none;
   counter-reset: develop-stages;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -323,7 +323,7 @@
   font-weight: 500;
   line-height: 26px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     font-size: 30px;
     line-height: 36px;
   }
@@ -335,7 +335,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     font-size: 18px;
     line-height: 24px;
   }
@@ -349,7 +349,7 @@
   list-style: none;
   counter-reset: team;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -364,7 +364,7 @@
   border-top: 1px solid var(--border-color);
   counter-increment: team;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     padding-top: 48px;
     padding-right: 40px;
     padding-bottom: 48px;
@@ -373,13 +373,13 @@
   }
 
   &:nth-child(even) {
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       padding-left: 20px;
     }
   }
 
   &:nth-child(8) {
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       border-bottom: 1px solid var(--border-color);
     }
   }
@@ -387,7 +387,7 @@
   &:last-of-type {
     border-bottom: 1px solid var(--border-color);
 
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       padding-bottom: 0;
       border-bottom: none;
     }
@@ -400,7 +400,7 @@
     line-height: 24px;
     content: counter(team, decimal-leading-zero) " ";
 
-    @media (min-width: 860px) {
+    @media (width >= 860px) {
       margin-right: 112px;
     }
   }

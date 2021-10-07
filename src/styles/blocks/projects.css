@@ -5,7 +5,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     padding-top: 200px;
   }
 }
@@ -15,7 +15,7 @@
   flex-direction: column;
   padding-bottom: 25px;
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding-bottom: 32px;
   }
 }
@@ -27,7 +27,7 @@
 .projects__toogle-container {
   display: none;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     display: flex;
     align-self: flex-end;
     margin-top: 40px;

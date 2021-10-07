@@ -9,7 +9,7 @@
 .form-section__container {
   padding-top: 100px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     padding-top: 200px;
   }
 }
@@ -24,7 +24,7 @@
   padding-bottom: 28px;
   border-bottom: 1px solid var(--border-color);
 
-  @media (min-width: 900px) {
+  @media (width >= 900px) {
     flex-direction: row;
   }
 }
@@ -35,7 +35,7 @@
   font-weight: 500;
   line-height: 36px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     font-size: 50px;
     line-height: 56px;
   }
@@ -50,7 +50,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     margin-top: 0;
     font-size: 18px;
     line-height: 24px;
@@ -64,7 +64,7 @@
   line-height: 28px;
   white-space: nowrap;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     margin-top: 16px;
     font-size: 30px;
     line-height: 36px;

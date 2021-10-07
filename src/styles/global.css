@@ -14,12 +14,12 @@ body {
   min-width: 360px;
   margin: 0;
   padding: 0;
-  color: var(--dark-grey);
+  color: var(--typo-primary-color);
   font-family: "GrandisExtended", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  background-color: var(--white);
+  background-color: var(--bg-primary-color);
   overflow-anchor: none;
 }
 

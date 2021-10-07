@@ -11,7 +11,7 @@
     margin-right: 10px;
     margin-bottom: 10px;
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       margin-right: 15px;
       margin-bottom: 10px;
     }

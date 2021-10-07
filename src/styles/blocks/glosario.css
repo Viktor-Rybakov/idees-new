@@ -2,7 +2,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     padding-top: 200px;
   }
 }
@@ -16,17 +16,17 @@
   grid-template-columns: 1fr;
   gap: 40px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: repeat(12, 1fr);
   }
 }
 
 .glosario__search-section {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-column: 1 / span 4;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-column: 1 / span 3;
   }
 }
@@ -51,7 +51,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     width: 250px;
   }
 }
@@ -92,11 +92,11 @@
   margin-top: 36px;
   border-top: 1px solid var(--border-color);
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-column: 5 / span 8;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-column: 4 / span 6;
   }
 }
@@ -104,7 +104,7 @@
 .glosario__collapse-menu {
   display: none;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     display: flex;
     grid-column: 10 / span 3;
     flex-direction: column;

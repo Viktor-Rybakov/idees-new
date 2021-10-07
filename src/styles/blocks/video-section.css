@@ -10,11 +10,11 @@
   object-position: center;
   transition: 0.5s;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     height: 600px;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     height: 900px;
   }
 }

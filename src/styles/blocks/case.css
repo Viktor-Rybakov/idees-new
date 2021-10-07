@@ -9,7 +9,7 @@
     "link";
 
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     grid-template-rows: min-content 1fr min-content;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -27,7 +27,7 @@
   line-height: 26px;
   transition: 0.3s;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-bottom: 8px;
     font-size: 30px;
     line-height: 36px;
@@ -46,7 +46,7 @@
   line-height: 18px;
   transition: 0.3s;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     font-size: 18px;
     line-height: 24px;
   }
@@ -61,7 +61,7 @@
   grid-area: title;
   margin-top: 24px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-top: 40px;
   }
 }
@@ -87,7 +87,7 @@
   align-self: flex-end;
   margin-top: 32px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-top: 0;
     margin-bottom: 40px;
   }
@@ -100,7 +100,7 @@
 .cases-section__list--blocks,
 .project__similar-list,
 .products__similar-list {
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     .case {
       display: grid;
       grid-template-columns: 1fr;

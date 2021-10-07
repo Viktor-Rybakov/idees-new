@@ -15,7 +15,7 @@
   padding-bottom: 32px;
   border-top: 1px solid var(--border-color);
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -26,7 +26,7 @@
 }
 
 .cases-section__list--blocks {
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -48,7 +48,7 @@
     border-top: none;
     border-bottom: 1px solid var(--border-color);
 
-    @media (min-width: 860px) {
+    @media (width >= 860px) {
       padding-top: 0;
     }
   }

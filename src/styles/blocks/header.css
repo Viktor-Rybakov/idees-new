@@ -8,12 +8,12 @@
   padding-bottom: 24px;
   color: var(--dark-grey);
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     grid-template-columns: min-content 1fr 1fr 120px;
   }
 
   &--form {
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       grid-template-columns: min-content 1fr 120px;
     }
   }
@@ -21,13 +21,13 @@
   &--menu {
     row-gap: 36px;
 
-    @media (min-width: 600px) {
+    @media (width >= 600px) {
       grid-template-columns: min-content 1fr 120px;
       padding-top: 20px;
       padding-bottom: 20px;
     }
 
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       grid-template-columns: min-content 1fr 1fr 120px;
       padding-top: 24px;
       padding-bottom: 24px;
@@ -41,7 +41,7 @@
   width: 136px;
   height: 34px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     width: 200px;
     height: 50px;
   }
@@ -57,7 +57,7 @@
   height: 34px;
   fill: currentColor;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     width: 200px;
     height: 50px;
   }
@@ -88,7 +88,7 @@
     height: 40px;
     margin-right: -4px;
 
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       margin-right: 0;
     }
   }
@@ -102,7 +102,7 @@
     height: 40px;
     margin-right: -8px;
 
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       justify-content: flex-end;
       margin-right: 0;
     }
@@ -119,12 +119,12 @@
     background-color: var(--light);
     border-radius: 99em;
 
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       display: flex;
       margin-left: 60px;
     }
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       margin-left: 128px;
     }
   }
@@ -132,13 +132,13 @@
   &--project {
     display: none;
 
-    @media (min-width: 960px) {
+    @media (width >= 960px) {
       display: block;
       justify-self: flex-end;
       margin-right: 40px;
     }
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       margin-right: 73px;
     }
   }
@@ -153,14 +153,14 @@
     margin-left: unset;
 
 
-    @media (min-width: 600px) {
+    @media (width >= 600px) {
       grid-row: unset;
       grid-column: unset;
       width: auto;
       margin-left: 60px;
     }
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       margin-left: 128px;
     }
   }
@@ -169,7 +169,7 @@
 .header__button-text {
   display: none;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     display: block;
     margin-right: 10px;
   }
@@ -180,7 +180,7 @@
   height: 8px;
   fill: currentColor;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     width: 40px;
     height: 10px;
   }

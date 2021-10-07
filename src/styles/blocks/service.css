@@ -9,7 +9,7 @@
   padding-bottom: 32px;
   counter-increment: service;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -25,7 +25,7 @@
     line-height: 26px;
     content: counter(service, decimal-leading-zero) " ";
 
-    @media (min-width: 860px) {
+    @media (width >= 860px) {
       margin-right: 75px;
       margin-bottom: 0;
       color: var(--light-grey);
@@ -37,7 +37,7 @@
   &::after {
     display: none;
 
-    @media (min-width: 860px) {
+    @media (width >= 860px) {
       display: block;
       order: 3;
       width: 180px;
@@ -83,7 +83,7 @@
   font-weight: 500;
   line-height: 26px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-right: auto;
     margin-bottom: 0;
     font-size: 30px;
@@ -99,13 +99,13 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-left: 5%;
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     margin-left: 14.2%;
   }
 }

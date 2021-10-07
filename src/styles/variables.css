@@ -7,8 +7,22 @@
   --light-grey: #b9b9b9;
   --light: #f8f8f8;
   --white: #ffffff;
-
-  --border-color: #ebebeb;
+  --light-grey-2: #ebebeb;
   --red-color: #f34e4e;
   --blue-color: #1877f2;
+
+  --bg-primary-color: var(--white);
+  --bg-secondary-color: var(--light);
+  --bd-dark-color: var(--dark-grey);
+
+  --typo-primary-color: var(--dark-grey);
+  --typo-secondary-color: var(--light-grey);
+  --typo-contrast-color: var(--white);
+  --typo-ghost-color: var(--grey);
+
+  --special-color: var(--yellow);
+  --special-color-2: var(--blue-color);
+  --warning-color: var(--red-color);
+
+  --border-color: var(--light-grey-2);
 }

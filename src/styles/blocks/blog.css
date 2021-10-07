@@ -2,7 +2,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     padding-top: 200px;
   }
 }
@@ -14,7 +14,7 @@
   padding-bottom: 25px;
   border-bottom: 1px solid var(--border-color);
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     padding-bottom: 32px;
   }
 }
@@ -36,11 +36,11 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -51,7 +51,7 @@
   padding-top: 25px;
   padding-bottom: 55px;
 
-  @media (min-width: 960px) {
+  @media (width >= 960px) {
     padding-top: 80px;
     padding-bottom: 110px;
   }
@@ -66,7 +66,7 @@
   padding: 40px 40px;
   background-color: var(--light);
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-template-columns: 1fr 1fr;
     padding: 96px 138px;
   }
@@ -78,7 +78,7 @@
   font-weight: 500;
   line-height: 28px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
     font-size: 50px;
@@ -91,7 +91,7 @@
   font-size: 18px;
   line-height: 24px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
     font-size: 22px;
@@ -102,7 +102,7 @@
 .blog__link {
   justify-self: flex-start;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
   }
@@ -118,7 +118,7 @@
   font-size: 18px;
   line-height: 24px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
     flex-direction: row;
@@ -139,13 +139,13 @@
   border: none;
   border-bottom: 1px solid var(--border-color);
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     width: 250px;
     margin-right: 20px;
     margin-bottom: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     width: 450px;
   }
 

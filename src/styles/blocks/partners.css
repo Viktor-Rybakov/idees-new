@@ -1,7 +1,7 @@
 .partners__top-section {
   padding-top: 80px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     padding-top: 200px;
   }
 }
@@ -14,7 +14,7 @@
   margin-top: 48px;
   padding-bottom: 90px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-template-columns: 1fr 1fr;
     padding-top: 48px;
     border-top: 1px solid var(--border-color);
@@ -25,7 +25,7 @@
   padding-top: 30px;
   padding-bottom: 60px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     padding-top: 72px;
     padding-bottom: 110px;
   }
@@ -38,7 +38,7 @@
   font-weight: 500;
   line-height: 36px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     margin-bottom: 80px;
     font-size: 50px;
     line-height: 56px;
@@ -50,7 +50,7 @@
   font-size: 18px;
   line-height: 24px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     font-size: 22px;
     line-height: 28px;
   }
@@ -63,7 +63,7 @@
   line-height: 20px;
   background-color: var(--light);
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     justify-self: end;
     align-self: start;
     width: 513px;
@@ -75,7 +75,7 @@
   grid-template-columns: 1fr;
   gap: 40px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -88,7 +88,7 @@
   margin: 0;
   column-gap: 66px;
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     grid-template-columns: max-content max-content;
   }
 }
@@ -101,12 +101,12 @@
   &:nth-of-type(1) {
     margin-bottom: 20px;
 
-    @media (min-width: 600px) {
+    @media (width >= 600px) {
       margin-bottom: 0;
     }
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     font-size: 22px;
     line-height: 28px;
   }
@@ -121,7 +121,7 @@
   &:nth-of-type(1) {
     grid-row: 1 / span 1;
 
-    @media (min-width: 600px) {
+    @media (width >= 600px) {
       grid-row: 1 / span 1;
     }
   }
@@ -129,19 +129,19 @@
   &:nth-of-type(2) {
     grid-row: 3 / span 1;
 
-    @media (min-width: 600px) {
+    @media (width >= 600px) {
       grid-row: 1 / span 1;
     }
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     font-size: 70px;
     line-height: 76px;
   }
 }
 
 .partners__grey-description-container {
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-row: span 2;
   }
 }
@@ -171,7 +171,7 @@
   border-top: 1px solid var(--border-color);
   counter-reset: work;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -182,7 +182,7 @@
   padding-bottom: 48px;
   counter-increment: work;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     &:nth-child(1),
     &:nth-child(2) {
       border-bottom: 1px solid var(--border-color);
@@ -205,7 +205,7 @@
     line-height: 24px;
     content: counter(work, decimal-leading-zero) " ";
 
-    @media (min-width: 1200px) {
+    @media (width >= 1200px) {
       color: var(--light-grey);
     }
   }
@@ -218,7 +218,7 @@
   font-weight: 500;
   line-height: 28px;
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     font-size: 30px;
     line-height: 36px;
   }

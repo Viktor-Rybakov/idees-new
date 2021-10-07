@@ -3,7 +3,7 @@
 .services-section {
   padding-top: 80px;
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     padding-top: 160px;
   }
 }
@@ -17,7 +17,7 @@
     "button";
   margin-bottom: 40px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     grid-template-rows: 1fr min-content;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -36,7 +36,7 @@
   font-weight: 500;
   line-height: 30px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-bottom: 0;
     font-size: 50px;
     line-height: 56px;
@@ -47,7 +47,7 @@
   grid-area: description;
   margin-bottom: 24px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-bottom: 0;
   }
 }
@@ -57,7 +57,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     font-size: 22px;
     line-height: 28px;
   }
@@ -65,7 +65,7 @@
   &:not(:last-of-type) {
     margin-bottom: 8px;
 
-    @media (min-width: 860px) {
+    @media (width >= 860px) {
       margin-bottom: 10px;
     }
   }

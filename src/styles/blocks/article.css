@@ -26,7 +26,7 @@
   }
 
   &--main {
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
       grid-template-rows: min-content min-content 1fr min-content;
       grid-template-columns: repeat(3, 1fr);
       min-height: auto;
@@ -54,7 +54,7 @@
 }
 
 .article--main .article__tag {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 1 / span 2;
   }
 }
@@ -71,7 +71,7 @@
 }
 
 .article--main .article__info {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 1 / span 1;
     grid-column: 3 / span 1;
   }
@@ -89,7 +89,7 @@
 }
 
 .article--main .article__date {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 1 / span 1;
     grid-column: 3 / span 1;
   }
@@ -138,7 +138,7 @@
 }
 
 .article--main .article__title {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 2 / span 1;
     grid-column: 3 / span 1;
   }
@@ -154,7 +154,7 @@
 }
 
 .article--main .article__description {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 3 / span 1;
     grid-column: 3 / span 1;
   }
@@ -178,7 +178,7 @@
 }
 
 .article--main .article__image {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 1 / span 4;
     grid-column: 1 / span 2;
     width: 100%;
@@ -198,7 +198,7 @@
 }
 
 .article--main .article__link {
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     grid-row: 4 / span 1;
     grid-column: 3 / span 1;
   }

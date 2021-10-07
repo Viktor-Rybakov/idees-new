@@ -4,7 +4,7 @@
   padding-top: 86px;
   padding-bottom: 80px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     padding-top: 200px;
     padding-bottom: 160px;
   }
@@ -16,7 +16,7 @@
   align-items: center;
   margin-bottom: 32px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     margin-bottom: 70px;
   }
 }
@@ -27,14 +27,14 @@
   font-weight: 500;
   line-height: 30px;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     font-size: 50px;
     line-height: 56px;
   }
 }
 
 .feedback-section__list-container {
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     width: 100%;
     overflow: hidden;
   }
@@ -49,7 +49,7 @@
   overflow: hidden;
   list-style: none;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     width: auto;
     margin-left: -10px;
     overflow: initial;
@@ -60,14 +60,14 @@
   flex-shrink: 0;
   width: 100%;
 
-  @media (min-width: 860px) {
+  @media (width >= 860px) {
     width: 74.5%;
     margin-right: 170px;
     padding: 10px;
   }
 
   &:not(.feedback-section__item--active) {
-    @media (min-width: 860px) {
+    @media (width >= 860px) {
       opacity: 0.3;
       filter: blur(4px);
     }
