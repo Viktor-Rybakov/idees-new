@@ -2,26 +2,30 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 120px;
+  grid-template-columns: 1fr 40px 120px;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: var(--dark-grey);
+  color: var(--typo-primary-color);
 
   @media (width >= 960px) {
-    grid-template-columns: min-content 1fr 1fr 120px;
+    grid-template-columns: min-content 1fr 1fr 1fr 120px;
   }
 
   &--form {
+    grid-template-columns: 1fr 120px;
+
     @media (width >= 960px) {
       grid-template-columns: min-content 1fr 120px;
     }
   }
 
   &--menu {
+    grid-template-columns: 1fr 120px;
+
     row-gap: 36px;
 
-    @media (width >= 600px) {
+    @media (width >= 660px) {
       grid-template-columns: min-content 1fr 120px;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -47,7 +51,7 @@
   }
 
   &:hover {
-    color: var(--grey);
+    color: var(--typo-ghost-color);
   }
 }
 
@@ -76,7 +80,7 @@
   transition: 0.2s;
 
   &:hover {
-    color: var(--grey);
+    color: var(--typo-ghost-color);
   }
 
   &--menu {
@@ -86,9 +90,23 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    margin-right: -4px;
+  }
+
+  &--theme {
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
 
     @media (width >= 960px) {
+      margin-right: 40px;
+    }
+
+    @media (width >= 1200px) {
       margin-right: 0;
     }
   }
@@ -100,11 +118,9 @@
     align-items: center;
     min-width: 40px;
     height: 40px;
-    margin-right: -8px;
 
     @media (width >= 960px) {
       justify-content: flex-end;
-      margin-right: 0;
     }
   }
 
@@ -116,6 +132,7 @@
     min-height: 48px;
     padding-right: 24px;
     padding-left: 24px;
+    color: var(--dark-grey);
     background-color: var(--light);
     border-radius: 99em;
 
@@ -135,7 +152,6 @@
     @media (width >= 960px) {
       display: block;
       justify-self: flex-end;
-      margin-right: 40px;
     }
 
     @media (width >= 1200px) {
@@ -153,7 +169,7 @@
     margin-left: unset;
 
 
-    @media (width >= 600px) {
+    @media (width >= 660px) {
       grid-row: unset;
       grid-column: unset;
       width: auto;
@@ -191,4 +207,20 @@
   height: 24px;
   fill: currentColor;
   stroke: currentColor;
+}
+
+.header__logo-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
+}
+
+.dark {
+  .header__button-link--theme {
+    background-color: var(--yellow);
+  }
+
+  .header__logo-icon {
+    fill: var(--dark-grey);
+  }
 }

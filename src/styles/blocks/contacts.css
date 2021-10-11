@@ -34,7 +34,7 @@
   }
 
   &:hover {
-    color: var(--grey);
+    color: var(--typo-ghost-color);
   }
 
   @media (width >= 960px) {
@@ -79,7 +79,7 @@
   transition: 0.3s;
 
   &:hover {
-    color: var(--grey);
+    color: var(--typo-ghost-color);
   }
 
   @media (width >= 960px) {

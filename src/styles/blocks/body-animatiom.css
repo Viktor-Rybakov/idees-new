@@ -1,0 +1,60 @@
+.dark-light-animation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    content: "";
+    background-color: var(--white);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: bg-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+  }
+}
+
+.light-dark-animation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  overflov: hidden;
+
+  &::before {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    content: "";
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: bg-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes bg-animation {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: 3000px;
+    height: 3000px;
+  }
+}

@@ -41,6 +41,7 @@
   width: 40px;
   height: 40px;
   padding: 0;
+  color: var(--typo-primary-color);
   background: none;
   border: 1px solid var(--border-color);
   border-radius: 50%;
@@ -52,12 +53,20 @@
   }
 
   &:hover {
-    border-color: var(--dark-grey);
+    border-color: var(--typo-ghost-color);
   }
 
   &--active {
-    border-color: var(--dark-grey);
+    border-color: var(--typo-primary-color);
   }
+}
+
+.dark .projects__toogle-button  {
+  border: 1px solid var(--typo-ghost-color);
+}
+
+.dark .projects__toogle-button--active  {
+  border: 1px solid var(--typo-primary-color);
 }
 
 .projects__content {

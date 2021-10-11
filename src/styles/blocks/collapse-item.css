@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 100%;
   padding: 18px 0;
-  background-color: var(--white);
+  background-color: var(--bg-primary-color);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -32,7 +32,7 @@
   height: 40px;
   margin-right: -12px;
   padding: 0;
-  color: var(--dark-grey);
+  color: var(--typo-primary-color);
 }
 
 .collapse-item__button-icon {
@@ -46,7 +46,7 @@
 .collapse-item__description {
   max-width: 670px;
   margin: 0;
-  color: var(--dark-grey);
+  color: var(--typo-primary-color);
   font-size: 18px;
   line-height: 24px;
 }

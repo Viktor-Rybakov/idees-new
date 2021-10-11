@@ -67,7 +67,7 @@
 }
 
 .vacancies__link:hover .vacancies__name {
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
 }
 
 .vacancies__descr {
@@ -75,7 +75,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 18px;
   line-height: 24px;
 

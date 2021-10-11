@@ -71,12 +71,12 @@
 }
 
 .map__link {
-  color: var(--dark-grey);
+  color: var(--typo-primary-color);
   font-size: inherit;
   line-height: inherit;
   cursor: pointer;
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-ghost-color);
   }
 }

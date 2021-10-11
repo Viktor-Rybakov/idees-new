@@ -3,7 +3,7 @@
 .menu {
   flex-direction: column;
   padding-bottom: 140px;
-  background-color: var(--white);
+  background-color: var(--bg-primary-color);
 
   @media (width >= 800px) {
     padding-bottom: 100px;
@@ -124,7 +124,7 @@
   transition: 0.2s;
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-secondary-color);
   }
 
   @media (width >= 1200px) {
@@ -178,11 +178,11 @@
   }
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-secondary-color);
 
     @media (width >= 1200px) {
       padding-left: 30px;
-      color: var(--dark-grey);
+      color: var(--typo-primary-color);
 
       &::before {
         left: 0;
@@ -190,6 +190,10 @@
       }
     }
   }
+}
+
+.dark .menu__sub-link::before {
+  filter: invert(100%);
 }
 
 .menu__contacts {
@@ -213,7 +217,7 @@
   transition: 0.2s;
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-secondary-color);
   }
 
   @media (width >= 1200px) {
@@ -258,7 +262,7 @@
   transition: 0.3s;
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-secondary-color);
   }
 
   @media (width >= 1200px) {
@@ -308,5 +312,17 @@
   &:hover {
     color: var(--dark-grey);
     background-color: var(--light-grey);
+  }
+}
+
+.dark {
+  .menu__accept-button {
+    color: var(--dark-grey);
+    background-color: var(--light);
+
+    &:hover {
+      color: var(--dark-grey);
+      background-color: var(--light-grey);
+    }
   }
 }

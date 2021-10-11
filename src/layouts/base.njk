@@ -21,6 +21,9 @@
   <link rel="manifest" href="/manifest.webmanifest">
 </head>
 <body class="page__body">
+  <script>
+    if (localStorage.getItem('darkTheme')) document.querySelector('body').classList.add('dark');
+  </script>
 
   {% block content %}{% endblock %}
 

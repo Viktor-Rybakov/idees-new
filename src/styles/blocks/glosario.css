@@ -47,7 +47,7 @@
   border-bottom: 1px solid var(--border-color);
 
   &::placeholder {
-    color: var(--dark-grey);
+    color: var(--typo-primary-color);
     opacity: 0.3;
   }
 
@@ -71,17 +71,17 @@
 }
 
 .glosario__menu-link {
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
 
   &:hover {
-    color: var(--dark-grey);
+    color: var(--typo-primary-color);
   }
 
   &--current {
-    color: var(--dark-grey);
+    color: var(--typo-primary-color);
   }
 }
 
@@ -90,6 +90,8 @@
   flex-direction: column;
   margin: 0;
   margin-top: 36px;
+  padding: 0;
+  list-style: none;
   border-top: 1px solid var(--border-color);
 
   @media (width >= 800px) {
@@ -115,7 +117,7 @@
     margin-top: 36px;
     padding: 28px 0;
     list-style: none;
-    background-color: var(--light);
+    background-color: var(--bg-secondary-color);
     border-right: 2px solid var(--border-color);
   }
 }
@@ -127,19 +129,19 @@
   min-height: 30px;
   margin-right: -2px;
   padding-right: 22px;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 16px;
   line-height: 22px;
   text-align: right;
   border-right: 2px solid transparent;
 
   &:hover {
-    color: var(--dark-grey);
-    border-color: var(--dark-grey);
+    color: var(--typo-primary-color);
+    border-color: currentColor;
   }
 
   &--current {
-    color: var(--dark-grey);
-    border-color: var(--dark-grey);
+    color: var(--typo-primary-color);
+    border-color: currentColor;
   }
 }

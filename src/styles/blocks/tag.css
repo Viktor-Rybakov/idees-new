@@ -6,11 +6,11 @@
   align-items: center;
   min-height: 38px;
   padding: 4px 18px;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 14px;
   line-height: 20px;
   background-color: transparent;
-  border: 1px solid var(--light-grey);
+  border: 1px solid currentColor;
   border-radius: 99em;
   cursor: pointer;
   transition: 0.3s;
@@ -23,11 +23,10 @@
   }
 
   &--active {
-    color: var(--dark-grey);
-    border-color: var(--dark-grey);
+    color: var(--typo-primary-color);
   }
 
   &:hover {
-    border-color: var(--dark-grey);
+    border-color: var(--typo-ghost-color);
   }
 }

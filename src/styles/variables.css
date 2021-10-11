@@ -7,22 +7,41 @@
   --light-grey: #b9b9b9;
   --light: #f8f8f8;
   --white: #ffffff;
-  --light-grey-2: #ebebeb;
+  --border-color: #ebebeb;
   --red-color: #f34e4e;
   --blue-color: #1877f2;
 
   --bg-primary-color: var(--white);
   --bg-secondary-color: var(--light);
-  --bd-dark-color: var(--dark-grey);
+  --bg-dark-color: var(--dark-grey);
 
   --typo-primary-color: var(--dark-grey);
   --typo-secondary-color: var(--light-grey);
   --typo-contrast-color: var(--white);
   --typo-ghost-color: var(--grey);
+}
 
-  --special-color: var(--yellow);
-  --special-color-2: var(--blue-color);
-  --warning-color: var(--red-color);
+.dark {
+  --bg-primary-color: var(--dark-grey);
+  --bg-secondary-color: #2E2E2E;
+  --bg-dark-color: #1E1E1E;
 
-  --border-color: var(--light-grey-2);
+  --typo-primary-color: var(--light);
+  --typo-secondary-color: var(--light-grey);
+  --typo-contrast-color: var(--dark-grey);
+  --typo-ghost-color: var(--grey);
+}
+
+.dark-typo {
+  --typo-primary-color: var(--light);
+  --typo-secondary-color: var(--light-grey);
+  --typo-contrast-color: var(--dark-grey);
+  --typo-ghost-color: var(--grey);
+}
+
+.light-typo {
+  --typo-primary-color: var(--dark-grey);
+  --typo-secondary-color: var(--light-grey);
+  --typo-contrast-color: var(--white);
+  --typo-ghost-color: var(--grey);
 }

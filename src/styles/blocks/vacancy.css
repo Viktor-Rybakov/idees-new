@@ -95,7 +95,7 @@
   display: flex;
   flex-direction: column;
   padding: 32px;
-  background-color: var(--light);
+  background-color: var(--bg-secondary-color);
 
   @media (width >= 1200px) {
     position: sticky;
@@ -134,14 +134,14 @@
 
 .vacancy__contacts-link {
   display: flex;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 18px;
   line-height: 24px;
   white-space: nowrap;
   transition: 0.2s;
 
   &:hover {
-    color: var(--dark-grey);
+    color: var(--typo-primary-color);
   }
 
   @media (width >= 800px) {

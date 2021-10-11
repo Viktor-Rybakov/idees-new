@@ -15,14 +15,6 @@
   }
 }
 
-.products__section {
-  padding-top: 50px;
-
-  @media (width >= 800px) {
-    padding-top: 160px;
-  }
-}
-
 .products__form {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -43,19 +35,6 @@
     grid-column: span 7;
     font-size: 96px;
     line-height: 110px;
-  }
-}
-
-.products__section-title {
-  margin: 0;
-  margin-bottom: 80px;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 36px;
-
-  @media (width >= 1200px) {
-    font-size: 50px;
-    line-height: 56px;
   }
 }
 
@@ -153,7 +132,7 @@
     content: counter(advantage, decimal-leading-zero) " ";
 
     @media (width >= 800px) {
-      color: var(--light-grey);
+      color: var(--typo-secondary-color);
     }
   }
 }

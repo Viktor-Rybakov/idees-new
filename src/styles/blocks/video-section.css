@@ -31,10 +31,6 @@
   margin: 0;
   padding: 0;
   background-color: rgba(256, 256, 256, 0.5);
-  background-image: url("/img/play-button.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 40px 44px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -52,4 +48,11 @@
     outline: none;
     box-shadow: 0 0 0 6px var(--white);
   }
+}
+
+.video-section__button-icon {
+  display: block;
+  width: 40px;
+  height: 44px;
+  fill: var(--white);
 }

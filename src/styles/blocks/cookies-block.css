@@ -10,7 +10,7 @@
   min-height: 110px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: var(--light);
+  background-color: var(--bg-secondary-color);
   border-top: 1px solid var(--border-color);
   transform: translateY(100%);
   transition: 0.8s;
@@ -64,7 +64,7 @@
   text-decoration: underline;
 
   &:hover {
-    color: var(--grey);
+    color: var(--typo-ghost-color);
   }
 }
 
@@ -81,13 +81,13 @@
   font-weight: 500;
   white-space: nowrap;
   text-transform: lowercase;
-  background-color: var(--dark-grey);
+  background-color: var(--bg-dark-color);
   border: none;
   border-radius: 99em;
   cursor: pointer;
 
   &:hover {
-    color: var(--dark-grey);
+    color: var(--bg-primary-color);
     background-color: var(--light-grey);
   }
 }

@@ -200,7 +200,7 @@
   width: 40px;
   height: 40px;
   margin-left: 30px;
-  color: var(--dark-grey);
+  color: var(--typo-primary-color);
   border: 1px solid currentColor;
   border-radius: 50%;
 
@@ -211,7 +211,7 @@
   }
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-ghost-color);
   }
 }
 

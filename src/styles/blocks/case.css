@@ -34,7 +34,7 @@
   }
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-ghost-color);
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-ghost-color);
   }
 }
 

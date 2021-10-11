@@ -55,17 +55,17 @@
 }
 
 .documents__menu-link {
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
 
   &:hover {
-    color: var(--dark-grey);
+    color: var(--typo-primary-color);
   }
 
   &--current {
-    color: var(--dark-grey);
+    color: var(--typo-primary-color);
   }
 }
 

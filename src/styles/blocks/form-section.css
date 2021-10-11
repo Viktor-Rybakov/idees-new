@@ -3,7 +3,7 @@
 .form-section {
   flex-direction: column;
   padding-bottom: 50px;
-  background-color: var(--white);
+  background-color: var(--bg-primary-color);
 }
 
 .form-section__container {
@@ -46,7 +46,7 @@
   flex-direction: column;
   margin: 0;
   margin-top: 20px;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 16px;
   line-height: 22px;
 
@@ -59,7 +59,7 @@
 
 .form-section__phone-link {
   margin-top: 8px;
-  color: var(--dark-grey);
+  color: var(--typo-primary-color);
   font-size: 22px;
   line-height: 28px;
   white-space: nowrap;
@@ -71,6 +71,6 @@
   }
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--typo-ghost-color);
   }
 }

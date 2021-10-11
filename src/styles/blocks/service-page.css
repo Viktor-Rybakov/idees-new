@@ -8,7 +8,7 @@
   }
 
   &--grey {
-    background-color: var(--light);
+    background-color: var(--bg-secondary-color);
   }
 
   &--top {
@@ -59,39 +59,7 @@
 
   &::after {
     @media (width >= 1200px) {
-      position: absolute;
-      top: 0;
-      right: 75px;
-      width: 360px;
-      height: 120px;
-      content: "";
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 360px 120px;
-    }
-  }
 
-  &--develop::after {
-    @media (width >= 1200px) {
-      background-image: url("/img/develop.svg");
-    }
-  }
-
-  &--branding::after {
-    @media (width >= 1200px) {
-      background-image: url("/img/branding.svg");
-    }
-  }
-
-  &--design::after {
-    @media (width >= 1200px) {
-      background-image: url("/img/design.svg");
-    }
-  }
-
-  &--strategy::after {
-    @media (width >= 1200px) {
-      background-image: url("/img/strategy.svg");
     }
   }
 }
@@ -106,6 +74,19 @@
   @media (width >= 960px) {
     font-size: 22px;
     line-height: 28px;
+  }
+}
+
+.service-page__icon {
+  display: none;
+
+  @media (width >= 1200px) {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 75px;
+    width: 360px;
+    height: 120px;
   }
 }
 
@@ -143,7 +124,7 @@
     content: counter(stages, decimal-leading-zero) " ";
 
     @media (width >= 800px) {
-      color: var(--light-grey);
+      color: var(--typo-secondary-color);
     }
   }
 }
@@ -163,7 +144,7 @@
 
 .service-page__stage-description {
   margin: 0;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 14px;
   line-height: 20px;
 
@@ -197,7 +178,7 @@
     margin-right: -16px;
     margin-left: -16px;
     padding: 32px 40px;
-    background-color: var(--light);
+    background-color: var(--bg-secondary-color);
 
     @media (width >= 1200px) {
       margin-right: 0;
@@ -223,7 +204,7 @@
 }
 
 .service-page__aside-params-name {
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 14px;
   line-height: 18px;
 
@@ -272,7 +253,7 @@
   padding: 26px 32px;
   font-size: 12px;
   line-height: 18px;
-  background-color: var(--light);
+  background-color: var(--bg-secondary-color);
 
   @media (width >= 1200px) {
     margin-right: 0;
@@ -310,7 +291,7 @@
   &::before {
     display: block;
     grid-row: span 2;
-    color: var(--light-grey);
+    color: var(--typo-secondary-color);
     font-size: 18px;
     line-height: 24px;
     content: counter(develop-stages, decimal-leading-zero) " ";
@@ -331,7 +312,7 @@
 
 .service-page__develop-stage-description {
   margin: 0;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 14px;
   line-height: 20px;
 
@@ -395,7 +376,7 @@
 
   &::before {
     margin-right: 20px;
-    color: var(--light-grey);
+    color: var(--typo-secondary-color);
     font-size: 18px;
     line-height: 24px;
     content: counter(team, decimal-leading-zero) " ";

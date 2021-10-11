@@ -2,7 +2,7 @@
 
 .footer {
   padding-top: 45px;
-  background-color: var(--light);
+  background-color: var(--bg-secondary-color);
 
   @media (width >= 640px) {
     padding-top: 96px;
@@ -73,7 +73,7 @@
 .footer__text {
   margin: 0;
   margin-bottom: 45px;
-  color: var(--light-grey);
+  color: var(--typo-secondary-color);
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -98,13 +98,13 @@
   transition: 0.3s;
 
   &:hover {
-    color: var(--grey);
+    color: var(--typo-ghost-color);
   }
 
   &--form {
     display: inline;
     padding: 0;
-    color: var(--dark-grey);
+    color: var(--typo-primary-color);
     text-align: left;
     text-decoration: underline;
     background: none;
