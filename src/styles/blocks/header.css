@@ -44,6 +44,7 @@
   justify-self: flex-start;
   width: 136px;
   height: 34px;
+  transition: 0.2s;
 
   @media (width >= 960px) {
     width: 200px;
@@ -57,12 +58,13 @@
 
 .header__logo-image {
   display: block;
-  width: 136px;
+  width: 106px;
   height: 34px;
+  transition: 0.2s;
   fill: currentColor;
 
   @media (width >= 960px) {
-    width: 200px;
+    width: 157px;
     height: 50px;
   }
 }

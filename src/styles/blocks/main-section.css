@@ -29,6 +29,7 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+  filter: blur(40px);
 }
 
 .main-section__scene-img {
@@ -40,7 +41,6 @@
   height: 230px;
   will-change: transform;
   transform: translate(-50%, -50%);
-  filter: blur(40px);
   pointer-events: none;
 
   @media (width >= 1200px) {
