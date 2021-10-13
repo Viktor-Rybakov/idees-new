@@ -226,3 +226,23 @@
     fill: var(--dark-grey);
   }
 }
+
+.light-typo {
+  .header__button-link--theme {
+    background-color: var(--dark-grey);
+  }
+
+  .header__logo-icon {
+    fill: var(--white);
+  }
+}
+
+.dark-typo {
+  .header__button-link--theme {
+    background-color: var(--yellow);
+  }
+
+  .header__logo-icon {
+    fill: var(--dark-grey);
+  }
+}
