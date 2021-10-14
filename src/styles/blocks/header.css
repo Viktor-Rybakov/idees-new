@@ -227,7 +227,7 @@
   }
 }
 
-.light-typo {
+.light-button {
   .header__button-link--theme {
     background-color: var(--dark-grey);
   }
@@ -237,7 +237,7 @@
   }
 }
 
-.dark-typo {
+.dark-button {
   .header__button-link--theme {
     background-color: var(--yellow);
   }
