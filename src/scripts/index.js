@@ -9,6 +9,8 @@ import setPopupImages from './popup-image.js';
 import {setCollapseElements} from './collapse.js';
 import setVideo from './video.js';
 import setThemeButton from './theme.js';
+import setFeedbackSlider from './feedback-slider.js';
+import setSlider from './slider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   setModal('.modal', '.form-section', '.js-form-open', '.js-form-close');
@@ -24,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
   setCollapseElements('.collapse-item__title-wrapper', '.collapse-item', '.collapse-item__button', '.collapse-item__container');
   setVideo();
   setThemeButton();
+  setFeedbackSlider();
+  setSlider();
 
   const scene = document.getElementById('scene');
 

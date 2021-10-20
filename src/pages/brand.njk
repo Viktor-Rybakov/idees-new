@@ -94,18 +94,33 @@ permalink: brand.html
     </p>
   </div>
 
-  <div class="brand__slider-container">
+  <div class="brand__slider-container js-slider">
     <div class="container">
-      <ul class="brand__slider">
-        <li class="brand__slider-item brand__slider-item-active">Вы доверяете нашим специалистам и принимаете выполненную работу с первого раза</li>
-        <li class="brand__slider-item brand__slider-item-active">Все тексты и материалы предоставляются клиентом  в утвержденном виде</li>
-        <li class="brand__slider-item brand__slider-item-active">Домены и названия регистрируются, а хостинг покупается клиентом самостоятельно</li>
-        <li class="brand__slider-item brand__slider-item-active">Мы выделяем в команду проекта опытных дизайнеров под руководством арт-директора</li>
-        <li class="brand__slider-item">При необходимости, клиент приобретает лицензии на шрифты, иллюстрации и изображения</li>
+      <ul class="brand__slider js-slider-list">
+        <li class="brand__slider-item">
+          <span class="brand__slider-item-number">01</span>
+          <span>Вы доверяете нашим специалистам и принимаете выполненную работу с первого раза</span>
+        </li>
+        <li class="brand__slider-item">
+          <span class="brand__slider-item-number">02</span>
+          <span>Все тексты и материалы предоставляются клиентом  в утвержденном виде</span>
+        </li>
+        <li class="brand__slider-item">
+          <span class="brand__slider-item-number">03</span>
+          <span>Домены и названия регистрируются, а хостинг покупается клиентом самостоятельно</span>
+        </li>
+        <li class="brand__slider-item">
+          <span class="brand__slider-item-number">04</span>
+          <span>Мы выделяем в команду проекта опытных дизайнеров под руководством арт-директора</span>
+        </li>
+        <li class="brand__slider-item">
+          <span class="brand__slider-item-number">05</span>
+          <span>При необходимости, клиент приобретает лицензии на шрифты, иллюстрации и изображения</span>
+        </li>
       </ul>
 
       <div class="brand__slider-buttons">
-        <button class="button brand__slider-button" type="button" aria-label="Назад">
+        <button class="button brand__slider-button js-slider-button--prev" type="button" aria-label="Назад">
           <span class="button__icon-wrapper">
             <svg class="button__icon" width="24" height="24">
               <use xlink:href="/img/sprite.svg#arrow-left"></use>
@@ -113,7 +128,7 @@ permalink: brand.html
           </span>
         </button>
 
-        <button class="button brand__slider-button" type="button" aria-label="Вперед">
+        <button class="button brand__slider-button js-slider-button--next" type="button" aria-label="Вперед">
           <span class="button__icon-wrapper">
             <svg class="button__icon" width="24" height="24">
               <use xlink:href="/img/sprite.svg#arrow-right"></use>

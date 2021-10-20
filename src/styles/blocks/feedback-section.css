@@ -48,6 +48,7 @@
   padding: 0;
   overflow: hidden;
   list-style: none;
+  transition: transform 0.5s;
 
   @media (width >= 860px) {
     width: auto;
@@ -66,7 +67,7 @@
     padding: 10px;
   }
 
-  &:not(.feedback-section__item--active) {
+  &:not(.active) {
     @media (width >= 860px) {
       opacity: 0.3;
       filter: blur(4px);
